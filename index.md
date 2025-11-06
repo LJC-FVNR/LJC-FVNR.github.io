@@ -178,7 +178,7 @@ I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu
 </ul>
 
 <p class="btn-row">
-  <a class="pill-link" href="..."><i class="fas fa-book-open"></i> All news</a>
+  <a class="pill-link" href="/year-archive/"><i class="fas fa-book-open"></i> All news</a>
 </p>
 
 <hr class="hr-slim" />
@@ -222,5 +222,5 @@ I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu
 </div>
 
 <p class="btn-row">
-  <a class="pill-link" href="..."><i class="fas fa-book-open"></i> All publications</a>
+  <a class="pill-link" href="/publications/"><i class="fas fa-book-open"></i> All publications</a>
 </p>
