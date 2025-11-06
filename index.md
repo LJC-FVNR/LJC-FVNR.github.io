@@ -1,7 +1,11 @@
 ---
 layout: single
-author_profile: true 
-classes: wide 
+title: "Jiecheng Lu"
+description: >
+  Ph.D. student in Machine Learning at Georgia Tech. Research interests include foundation models, sequence modeling, time series analysis, and linear attention mechanisms.
+author_profile: true
+classes: wide
+permalink: /
 ---
 
 <style>

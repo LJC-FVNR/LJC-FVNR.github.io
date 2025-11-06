@@ -13,7 +13,7 @@ title                    : "Jiecheng Lu"
 title_separator          : "-"
 name                     : &name "Jiecheng Lu"
 description              : &description "PhD student @ Gatech, Time Series & ML"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://LJC-FVNR.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://ljc-fvnr.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "LJC-FVNR/LJC-FVNR.github.io"
@@ -78,6 +78,17 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+  links:
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=H_Bz5A0AAAAJ"
+    - label: "ORCID"
+      url: "https://orcid.org/0009-0008-3453-8569"
+    - label: "OpenReview"
+      url: "https://openreview.net/profile?id=%7EJiecheng_Lu1"
+    - label: "GitHub"
+      url: "https://github.com/LJC-FVNR"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/jiecheng-l-b01a491a4/"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -310,6 +321,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 # Mimic GitHub Pages with --safe
 whitelist:
