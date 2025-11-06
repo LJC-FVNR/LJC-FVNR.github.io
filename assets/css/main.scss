@@ -41,3 +41,10 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+.author__avatar img {
+  border-radius: 0 !important; /* 关键：取消圆角（默认是 50%） */
+  aspect-ratio: 2316 / 3088;         /* 保持显示为正方形 */
+  object-fit: cover;            /* 如果源图不是正方形，等比例裁切居中 */
+}

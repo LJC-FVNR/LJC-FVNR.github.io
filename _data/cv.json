@@ -1,152 +1,160 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Jiecheng Lu",
+    "email": "jlu414@gatech.edu",
+    "phone": "(+1) 470 929 4016",
+    "website": "https://ljc-fvnr.github.io",
+    "summary": "Ph.D. student in Machine Learning at Georgia Tech (Advisor: Shihao Yang). Research interests include foundation models, next‑generation sequence modeling for NLP/CV/time series, and linear attention mechanisms. Reviewer service: NeurIPS 2024 & 2025, ICLR 2025, ICML 2025, and IEEE Internet of Things Journal.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Atlanta",
       "countryCode": "US",
-      "region": ""
+      "region": "Georgia"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "H_Bz5A0AAAAJ",
+        "url": "https://scholar.google.com/citations?user=H_Bz5A0AAAAJ"
       },
       {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "OpenReview",
+        "username": "~Jiecheng_Lu1",
+        "url": "https://openreview.net/profile?id=~Jiecheng_Lu1"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Tencent (Tencent Medical AI Lab - JARVIS Lab)",
+      "position": "Data Scientist Intern",
+      "location": "Shenzhen, China",
+      "startDate": "2021-07",
+      "endDate": "2022-07",
+      "summary": "Developed deep learning/statistical models and co-authored publications & patents for medical time-series applications.",
+      "highlights": [
+        "Co-authored 2 papers on medical time series models and filed 6 patents as lead inventor.",
+        "Built models for medical insurance forecasting and epidemic monitoring.",
+        "Delivered tech solutions for medical facilities in 4 major cities, handling up to 10 million data points daily."
+      ]
+    },
+    {
+      "company": "Amazon (Amazon Private Brands)",
+      "position": "Business Analyst Intern",
+      "location": "Shenzhen, China",
+      "startDate": "2021-01",
+      "endDate": "2021-07",
+      "summary": "Applied ML and causal inference for cost analysis; built AWS-based dashboards to support sourcing decisions.",
+      "highlights": [
+        "Improved sourcing performance via data-driven methods for cost analysis.",
+        "Developed AWS-based dashboard web apps that helped save over $100,000 per month."
+      ]
+    },
+    {
+      "company": "Peking University (Guanghua School of Management)",
+      "position": "Research Assistant",
+      "location": "Beijing, China",
+      "startDate": "2020-09",
+      "endDate": "2021-01",
+      "summary": "Contributed to projects in supply chain finance, risk hedging, and logistics network design.",
+      "highlights": [
+        "Supported 10+ research projects and 4 papers.",
+        "Worked with stochastic programming, game theory, and structural equation models using CPLEX, Stata, AMOS, and Python."
+      ]
+    },
+    {
+      "company": "Country Garden Group",
+      "position": "Strategic and Data Analytics Intern",
+      "location": "Foshan, China",
+      "startDate": "2020-07",
+      "endDate": "2020-09",
+      "summary": "Strategy and analytics internship experience.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Georgia Institute of Technology",
+      "area": "Ph.D. in Machine Learning",
+      "studyType": "Ph.D.",
+      "startDate": "2023-08",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "Georgia Institute of Technology",
+      "area": "M.S. in Analytics",
+      "studyType": "Master's",
+      "startDate": "2021-08",
+      "endDate": "2023-08",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Tianjin University",
+      "area": "Bachelor in Logistics Engineering",
+      "studyType": "Bachelor's",
+      "startDate": "2016-09",
+      "endDate": "2020-06",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["Python", "C++", "SQL", "Shell", "JavaScript", "R", "Matlab"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "level": "",
+      "keywords": ["PyTorch", "Hive", "Spark", "Docker", "Tableau", "Cplex", "Stata"]
+    },
+    {
+      "name": "Domains",
+      "level": "",
+      "keywords": ["Machine Learning", "Deep Learning", "Operations Research", "Statistics", "Econometrics", "Web Development", "Cloud Computing"]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "ZeroS: Zero‑Sum Linear Attention for Efficient Transformer",
+      "publisher": "NeurIPS 2025 (Spotlight)",
+      "releaseDate": "2025"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting",
+      "publisher": "ICML 2025",
+      "releaseDate": "2025"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "WAVE: Weighted Autoregressive Varying Gate for Time Series Forecasting",
+      "publisher": "ICML 2025",
+      "releaseDate": "2025"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "In‑context Time Series Predictor",
+      "publisher": "ICLR 2025",
+      "releaseDate": "2025"
+    },
+    {
+      "name": "CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables",
+      "publisher": "ICML 2024",
+      "releaseDate": "2024"
+    },
+    {
+      "name": "ARM: Refining Multivariate Forecasting with Adaptive Temporal‑Contextual Learning",
+      "publisher": "ICLR 2024",
+      "releaseDate": "2024"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

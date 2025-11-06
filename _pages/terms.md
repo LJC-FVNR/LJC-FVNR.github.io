@@ -1,39 +1,69 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
-modified: 2016-06-06
+modified: 2025-11-05
 ---
 
 {% include base_path %}
 {% include toc %}
 
+## Overview
+
+This website is a personal academic homepage for sharing research updates, publications, and related materials. It is non-commercial.
+
+**Owner/Contact:** jlu414@gatech.edu
+
+Unless otherwise stated, all content is © Jiecheng Lu. You may link to this site. Reuse of papers, slides, and code follows the license stated in each item (e.g., conference proceedings, arXiv, or repository LICENSE). If no license is specified, **all rights are reserved**.
+
+---
+
 ## Privacy Policy
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+I collect as little personal data as possible. I do **not** run ads and do **not** offer comments or user accounts.
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+### What data may be processed
 
-### Log Files
+- **Server access logs** (standard web logs handled by the hosting provider): IP address, user-agent, date/time, requested URL, referrer. These logs are used for security and troubleshooting and are not combined to identify you.
+- **Email**: If you contact me, I will receive the information you send (e.g., email address and message content) and use it to respond.
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+### Cookies
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+This site itself does **not** set cookies for core functionality.
 
-All of this information is not linked to anything that is personally identifiable.
+#### Optional analytics
+If I enable privacy-friendly analytics, limited, non-identifying metrics may be collected.
 
-### Cookies and Web Beacons
+- **Plausible (recommended)**: no cookies; aggregated usage statistics only.  
+- **Google Analytics (alternative)**: uses cookies; collects pseudonymous usage data.
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](https://disqus.com) the next time you leave a comment.
+> Current status: **(choose one and keep only the applicable line)**
+> - Analytics **disabled**.
+> - Analytics **enabled with Plausible** (no cookies).
+> - Analytics **enabled with Google Analytics** (uses cookies). See Google’s privacy terms.
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+### Legal bases & rights
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+Depending on your location, you may have rights to access, correct, delete, or restrict processing of your data. To exercise rights or ask questions, email **jlu414@gatech.edu**. I will respond within a reasonable time.
 
-#### Google Analytics
+### Data retention
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](https://www.google.com/analytics/learn/privacy.html).
+- Server logs: retained by the hosting provider for a limited period necessary for security/operations.
+- Emails: retained as long as needed to address your inquiry.
+
+### Children’s privacy
+
+This site is not directed to children under 13 and does not knowingly collect their personal data.
+
+### Changes
+
+I may update this page from time to time. Material changes will be reflected by updating the “Last updated” date above.
+
+---
+
+## Terms of Use
+
+- Do not use this site in a way that violates applicable laws or harms the site’s operation.
+- External links are provided for convenience; I am not responsible for their content or policies.
+- Any datasets or code linked here are governed by their respective licenses and may have additional terms.
+
+For any questions about these terms or this policy, contact **jlu414@gatech.edu**.

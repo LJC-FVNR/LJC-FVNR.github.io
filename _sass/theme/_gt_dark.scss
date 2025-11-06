@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Georgia Tech Dark skin (for Minimal Mistakes / academicpages)
+   Background: Navy Blue；accent: Tech Gold
+   ========================================================================== */
+
+/* --- Brand palette --- */
+$gt-gold         : #B3A369;  /* Tech Gold */
+$gt-gold-medium  : #A4925A;
+$gt-gold-dark    : #857437;
+$gt-navy         : #003057;  /* Navy Blue */
+$gt-white        : #FFFFFF;
+$gt-gray-matter  : #54585A;
+$gt-pi-mile      : #D6DBD4;
+$gt-diploma      : #F9F6E5;
+
+/* --- Theme controls --- */
+$primary-color        : $gt-gold;               
+$dark-primary-color   : mix(#000, $primary-color, 40%);
+$darker-primary-color : mix(#000, $primary-color, 60%);
+$light-primary-color  : mix(#fff, $primary-color, 45%);
+
+$background           : $gt-gray-matter;                 
+$background-light     : mix(#fff, $background, 18%); 
+$background-lighter   : $gt-gold; 
+
+$text                 : #EAEAEA;                    
+$link                 : mix($primary-color, $text, 45%); 
+$link-dark            : mix(#000, $link, 20%);
+$link-light           : mix(#fff, $link, 25%);
+$footer               : mix(#000, $background, 30%); 
+
+/* --- Status colors --- */
+$danger-color  : #ee5f5b;
+$info-color    : #2f7f93;
+$notice-color  : #7a8288;
+$success-color : #62c462;
+$warning-color : #f89406;
+
+/* --- Layout tokens --- */
+$border-radius            : 4px;
+$box-shadow               : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition        : all 0.2s ease-in-out;
+$masthead-height          : 70px;
+$navicon-width            : 28px;
+$navicon-height           : 4px;
+$sidebar-link-max-width   : 250px;
+$sidebar-screen-min-width : 1024px;
+
+/* --- CSS custom properties for dark mode --- */
+html[data-theme="dark"] {
+  --global-base-color                : #{$background};
+  --global-bg-color                  : #{$background};
+  --global-footer-bg-color           : #{$footer};
+
+  --global-border-color              : #{$background-light};
+  --global-dark-border-color         : #{$background-light};
+
+  --global-code-background-color     : #{mix(#fff, $background, 10%)};
+  --global-code-text-color           : #{$primary-color};
+
+  --global-fig-caption-color         : #{$light-primary-color};
+
+  --global-link-color                : #{$link};
+  --global-link-color-hover          : #{$gt-gold}; 
+  --global-link-color-visited        : #{mix(#fff, $link, 25%)};
+  --global-masthead-link-color       : #{$gt-pi-mile};
+  --global-masthead-link-color-hover : #{$gt-diploma};
+
+  --global-text-color                : #{$text};
+  --global-text-color-light          : #{$gt-pi-mile};
+
+  --global-thead-color               : #{$background-lighter};
+}

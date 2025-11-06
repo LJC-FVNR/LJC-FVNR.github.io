@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Georgia Tech Light skin (for Minimal Mistakes / academicpages)
+   Primary: Tech Gold + Navy + White
+   ========================================================================== */
+
+/* --- Brand palette (from GT Brand Guide) --- */
+$gt-gold         : #B3A369;  /* Tech Gold */
+$gt-gold-medium  : #A4925A;  /* Accessible large text on light */
+$gt-gold-dark    : #857437;  /* Accessible small bold text on light */
+$gt-navy         : #003057;  /* Navy Blue */
+$gt-white        : #FFFFFF;
+$gt-gray-matter  : #54585A;  /* Secondary neutral */
+$gt-pi-mile      : #D6DBD4;  /* Secondary light warm gray */
+$gt-diploma      : #F9F6E5;  /* Secondary light ivory */
+
+/* --- Theme controls --- */
+$primary-color        : $gt-gold;
+$dark-primary-color   : mix(#000, $primary-color, 40%);
+$darker-primary-color : mix(#000, $primary-color, 60%);
+$light-primary-color  : mix(#fff, $primary-color, 55%);
+
+$background           : $gt-white;
+$background-light     : mix(#000, $background, 6%);  /* ~#F5F5F5 */
+$background-lighter   : $gt-diploma; 
+
+$text                 : #1F2328; 
+$link                 : $gt-navy; 
+$link-dark            : mix(#000, $link, 20%);
+$link-light           : mix(#fff, $link, 25%);
+$footer               : $gt-navy;  
+
+/* --- Status colors --- */
+$danger-color  : #ee5f5b;
+$info-color    : #2f7f93;
+$notice-color  : #7a8288;
+$success-color : #62c462;
+$warning-color : #f89406;
+
+/* --- Layout tokens --- */
+$border-radius            : 4px;
+$box-shadow               : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition        : all 0.2s ease-in-out;
+$masthead-height          : 70px;
+$navicon-width            : 28px;
+$navicon-height           : 4px;
+$sidebar-link-max-width   : 250px;
+$sidebar-screen-min-width : 1024px;
+
+/* --- CSS custom properties for light mode --- */
+:root {
+  --global-base-color                : #{$background};
+  --global-bg-color                  : #{$background};
+  --global-footer-bg-color           : #{$footer};
+
+  --global-border-color              : #{$light-primary-color};
+  --global-dark-border-color         : #{$background-light};
+
+  --global-code-background-color     : #f6f8fa;
+  --global-code-text-color           : #{$darker-primary-color};
+
+  --global-fig-caption-color         : #{$light-primary-color};
+
+  --global-link-color                : #{$link};
+  --global-link-color-hover          : #{$link-dark};
+  --global-link-color-visited        : #{$link-light};
+  --global-masthead-link-color       : #{$text};
+  --global-masthead-link-color-hover : #{$link};
+
+  --global-text-color                : #{$text};
+  --global-text-color-light          : #{$gt-gold-dark};
+
+  --global-thead-color               : #{$background-lighter};
+}
