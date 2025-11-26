@@ -1,4 +1,8 @@
+---
+layout: null
+---
+
 User-agent: *
 Allow: /
 
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: https://ljc-fvnr.github.io/sitemap.xml
