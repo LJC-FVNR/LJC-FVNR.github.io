@@ -131,7 +131,7 @@ permalink: /
   About
 </h2>
 
-I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). I am broadly interested in machine learning for sequential data. My research integrates classical statistical principles with emerging sequential neural network architectures to develop principled and efficient approaches for **time series forecasting** and **general sequence modeling**.  
+I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). I am broadly interested in machine learning for sequential data. My research integrates statistical principles with emerging sequential neural network architectures to develop principled and efficient approaches for **time series forecasting** and **general sequence modeling**.  
 
 <div class="link-row">
   <a class="pill-link" href="mailto:jlu414@gatech.edu" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
