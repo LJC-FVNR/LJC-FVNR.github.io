@@ -154,7 +154,29 @@
       "releaseDate": "2024"
     }
   ],
-  "presentations": [],
+  "presentations": [
+    {
+      "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
+      "date": "2026-04-03",
+      "event": "Student Seminar, Georgia Tech Machine Learning Student Seminar",
+      "location": "C1115 Druid Hills, Atlanta, GA",
+      "description": "Student seminar talk on scaling laws, attention expressivity, and the role of architecture in sequence modeling."
+    },
+    {
+      "name": "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective",
+      "date": "2026-03-10",
+      "event": "Invited Talk, Tsinghua University, Knowledge Engineering Group",
+      "location": "Online",
+      "description": "Invited online talk on HyperMLP and sequence modeling."
+    },
+    {
+      "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
+      "date": "2026-02-13",
+      "event": "PhD Seminar, Georgia Tech ISyE PhD Student Seminar",
+      "location": "ISyE Main Building 126, Atlanta, GA",
+      "description": "Seminar talk on scaling laws, attention expressivity, and the role of architecture in sequence modeling."
+    }
+  ],
   "teaching": [],
   "portfolio": []
 }

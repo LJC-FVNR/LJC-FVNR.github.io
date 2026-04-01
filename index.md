@@ -111,6 +111,27 @@ permalink: /
 }
 .pubs--compact .chip:hover{ border-color: var(--global-link-color); }
 
+/* ===== Talks: compact cards ===== */
+.talks--compact{ margin-top:.5rem; }
+.talks--compact .talk-item{
+  padding:.8rem .75rem .9rem .75rem;
+  border:1px solid var(--global-dark-border-color);
+  background: transparent;
+  margin-bottom:.6rem;
+  border-left:4px solid var(--global-link-color);
+}
+.talks--compact .talk-item:hover{
+  background: var(--global-thead-color);
+  border-color: var(--global-border-color);
+}
+.talks--compact .talk-title{
+  font-size:1.02rem; line-height:1.35; font-weight:700; margin:0;
+}
+.talks--compact .talk-title a{ text-decoration:none; }
+.talks--compact .talk-title a:hover{ text-decoration:underline; }
+.talks--compact .talk-meta{ font-size:.92rem; margin-top:.15rem; }
+.talks--compact .talk-excerpt{ font-size:.93rem; margin-top:.35rem; }
+
 /* Buttons: rely on theme, only adjust hue via link-color */
 .btn-row .btn,
 .btn-row .btn:visited{
@@ -182,6 +203,38 @@ I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu
 </p>
 
 <hr class="hr-slim" />
+
+<h2 class="section-title">
+  Talks
+</h2>
+
+{% assign recent_talks = site.talks | sort: "date" | reverse | slice: 0, 4 %}
+{% if recent_talks and recent_talks != empty %}
+<div class="talks talks--compact">
+{% for talk in recent_talks %}
+  <article class="talk-item">
+    <div class="talk-title">
+      <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+    </div>
+    <div class="talk-meta">
+      {% if talk.type %}{{ talk.type }} · {% endif %}
+      {% if talk.venue %}<em>{{ talk.venue }}</em>{% endif %}
+      {% if talk.location %} · {{ talk.location }}{% endif %}
+      {% if talk.date %} · {{ talk.date | date: "%b %Y" }}{% endif %}
+    </div>
+    {% if talk.excerpt %}
+      <div class="talk-excerpt">{{ talk.excerpt | strip_html }}</div>
+    {% endif %}
+  </article>
+{% endfor %}
+</div>
+
+<p class="btn-row">
+  <a class="pill-link" href="/talks/"><i class="fas fa-microphone"></i> All talks</a>
+</p>
+
+<hr class="hr-slim" />
+{% endif %}
 
 <h2 class="section-title">
   Selected Publications
