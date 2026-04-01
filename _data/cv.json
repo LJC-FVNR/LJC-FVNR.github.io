@@ -3,8 +3,8 @@
     "name": "Jiecheng Lu",
     "email": "jlu414@gatech.edu",
     "phone": "(+1) 470 929 4016",
-    "website": "https://ljc-fvnr.github.io",
-    "summary": "Ph.D. student in Machine Learning at Georgia Tech (Advisor: Shihao Yang). Research interests include foundation models, next‑generation sequence modeling for NLP/CV/time series, and linear attention mechanisms. Reviewer service: NeurIPS 2024 & 2025, ICLR 2025, ICML 2025, and IEEE Internet of Things Journal.",
+    "website": "https://ljc-fvnr.github.io/",
+    "summary": "Ph.D. student in Machine Learning at Georgia Tech, advised by Shihao Yang. Research interests include foundation models, general sequence modeling, linear attention mechanisms, and time series analysis.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -17,59 +17,50 @@
         "network": "Google Scholar",
         "username": "H_Bz5A0AAAAJ",
         "url": "https://scholar.google.com/citations?user=H_Bz5A0AAAAJ"
-      },
-      {
-        "network": "OpenReview",
-        "username": "~Jiecheng_Lu1",
-        "url": "https://openreview.net/profile?id=~Jiecheng_Lu1"
       }
     ]
   },
   "work": [
     {
-      "company": "Tencent (Tencent Medical AI Lab - JARVIS Lab)",
-      "position": "Data Scientist Intern",
+      "company": "Tencent",
+      "position": "Data Scientist Intern, Tencent Medical AI Lab (JARVIS Lab)",
       "location": "Shenzhen, China",
-      "startDate": "2021-07",
-      "endDate": "2022-07",
-      "summary": "Developed deep learning/statistical models and co-authored publications & patents for medical time-series applications.",
+      "startDate": "07.2021",
+      "endDate": "07.2022",
+      "summary": "",
       "highlights": [
-        "Co-authored 2 papers on medical time series models and filed 6 patents as lead inventor.",
-        "Built models for medical insurance forecasting and epidemic monitoring.",
-        "Delivered tech solutions for medical facilities in 4 major cities, handling up to 10 million data points daily."
+        "Led development of deep learning and statistical models for medical insurance forecasting and epidemic monitoring.",
+        "Created technical solutions for medical facilities in four major cities, handling up to 10 million data points daily."
       ]
     },
     {
-      "company": "Amazon (Amazon Private Brands)",
-      "position": "Business Analyst Intern",
+      "company": "Amazon",
+      "position": "Business Analyst Intern, Global Sourcing Team, Amazon Private Brands",
       "location": "Shenzhen, China",
-      "startDate": "2021-01",
-      "endDate": "2021-07",
-      "summary": "Applied ML and causal inference for cost analysis; built AWS-based dashboards to support sourcing decisions.",
+      "startDate": "01.2021",
+      "endDate": "07.2021",
+      "summary": "",
       "highlights": [
-        "Improved sourcing performance via data-driven methods for cost analysis.",
-        "Developed AWS-based dashboard web apps that helped save over $100,000 per month."
+        "Boosted sourcing team performance through data-driven methods, using machine learning and causal inference for cost analysis.",
+        "Developed AWS-based dashboard web apps, aiding in cost decision-making and saving the team over $100,000 monthly in costs."
       ]
     },
     {
-      "company": "Peking University (Guanghua School of Management)",
-      "position": "Research Assistant",
+      "company": "Peking University",
+      "position": "Research Assistant, Guanghua School of Management",
       "location": "Beijing, China",
-      "startDate": "2020-09",
-      "endDate": "2021-01",
-      "summary": "Contributed to projects in supply chain finance, risk hedging, and logistics network design.",
-      "highlights": [
-        "Supported 10+ research projects and 4 papers.",
-        "Worked with stochastic programming, game theory, and structural equation models using CPLEX, Stata, AMOS, and Python."
-      ]
+      "startDate": "09.2020",
+      "endDate": "01.2021",
+      "summary": "",
+      "highlights": []
     },
     {
       "company": "Country Garden Group",
-      "position": "Strategic and Data Analytics Intern",
+      "position": "Strategic and Data Analytics Intern, New Business Division",
       "location": "Foshan, China",
-      "startDate": "2020-07",
-      "endDate": "2020-09",
-      "summary": "Strategy and analytics internship experience.",
+      "startDate": "07.2020",
+      "endDate": "09.2020",
+      "summary": "",
       "highlights": []
     }
   ],
@@ -78,8 +69,10 @@
       "institution": "Georgia Institute of Technology",
       "area": "Ph.D. in Machine Learning",
       "studyType": "Ph.D.",
-      "startDate": "2023-08",
-      "endDate": "Present",
+      "startDate": "08.2023",
+      "endDate": "05.2027",
+      "advisor": "Shihao Yang",
+      "location": "Atlanta, U.S.",
       "gpa": null,
       "courses": []
     },
@@ -87,8 +80,9 @@
       "institution": "Georgia Institute of Technology",
       "area": "M.S. in Analytics",
       "studyType": "Master's",
-      "startDate": "2021-08",
-      "endDate": "2023-08",
+      "startDate": "08.2021",
+      "endDate": "08.2023",
+      "location": "Atlanta, U.S.",
       "gpa": null,
       "courses": []
     },
@@ -96,85 +90,155 @@
       "institution": "Tianjin University",
       "area": "Bachelor in Logistics Engineering",
       "studyType": "Bachelor's",
-      "startDate": "2016-09",
-      "endDate": "2020-06",
+      "startDate": "09.2016",
+      "endDate": "06.2020",
+      "location": "Tianjin, China",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [
-    {
-      "name": "Programming Languages",
-      "level": "",
-      "keywords": ["Python", "C++", "SQL", "Shell", "JavaScript", "R", "Matlab"]
-    },
-    {
-      "name": "Frameworks & Tools",
-      "level": "",
-      "keywords": ["PyTorch", "Hive", "Spark", "Docker", "Tableau", "Cplex", "Stata"]
-    },
-    {
-      "name": "Domains",
-      "level": "",
-      "keywords": ["Machine Learning", "Deep Learning", "Operations Research", "Statistics", "Econometrics", "Web Development", "Cloud Computing"]
-    }
-  ],
+  "skills": [],
   "languages": [],
   "interests": [],
   "references": [],
-  "publications": [
+  "publications": [],
+  "publication_groups": [
     {
-      "name": "ZeroS: Zero‑Sum Linear Attention for Efficient Transformer",
-      "publisher": "NeurIPS 2025 (Spotlight)",
-      "releaseDate": "2025"
+      "name": "First-authored Papers",
+      "items": [
+        {
+          "name": "HyperMLP: An Integrated Perspective for Sequence Modeling",
+          "authors": "Jiecheng Lu, Shihao Yang",
+          "publisher": "ICML 2026 under review",
+          "releaseDate": "2026"
+        },
+        {
+          "name": "Free Energy Mixer",
+          "authors": "Jiecheng Lu, Shihao Yang",
+          "publisher": "ICLR 2026",
+          "releaseDate": "2026",
+          "website": "https://openreview.net/forum?id=vjQnKToCnV",
+          "summary": "Introduces Free Energy Mixer (FEM), which interprets attention scores as a prior and performs a free-energy readout for channel-wise selective retrieval without increasing asymptotic complexity."
+        },
+        {
+          "name": "ZeroS: Zero-Sum Linear Attention for Efficient Transformer",
+          "authors": "Jiecheng Lu, Xu Han, Yan Sun, Viresh Pati, Yubin Kim, Siddhartha Somani, Shihao Yang",
+          "publisher": "NeurIPS 2025 (Spotlight)",
+          "releaseDate": "2025",
+          "website": "https://neurips.cc/virtual/2025/poster/118425"
+        },
+        {
+          "name": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting",
+          "authors": "Jiecheng Lu, Shihao Yang",
+          "publisher": "ICML 2025",
+          "releaseDate": "2025",
+          "website": "https://proceedings.mlr.press/v267/lu25r.html"
+        },
+        {
+          "name": "WAVE: Weighted Autoregressive Varying Gate for Time Series Forecasting",
+          "authors": "Jiecheng Lu, Xu Han, Yan Sun, Shihao Yang",
+          "publisher": "ICML 2025",
+          "releaseDate": "2025",
+          "website": "https://proceedings.mlr.press/v267/lu25d.html"
+        },
+        {
+          "name": "In-context Time Series Predictor",
+          "authors": "Jiecheng Lu, Yan Sun, Shihao Yang",
+          "publisher": "ICLR 2025",
+          "releaseDate": "2025",
+          "website": "https://openreview.net/forum?id=dCcY2pyNIO"
+        },
+        {
+          "name": "CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables",
+          "authors": "Jiecheng Lu, Xu Han, Yan Sun, Shihao Yang",
+          "publisher": "ICML 2024",
+          "releaseDate": "2024",
+          "website": "https://proceedings.mlr.press/v235/lu24d.html"
+        },
+        {
+          "name": "ARM: Refining Multivariate Forecasting with Adaptive Temporal-Contextual Learning",
+          "authors": "Jiecheng Lu, Xu Han, Shihao Yang",
+          "publisher": "ICLR 2024",
+          "releaseDate": "2024",
+          "website": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html"
+        }
+      ]
     },
     {
-      "name": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting",
-      "publisher": "ICML 2025",
-      "releaseDate": "2025"
-    },
-    {
-      "name": "WAVE: Weighted Autoregressive Varying Gate for Time Series Forecasting",
-      "publisher": "ICML 2025",
-      "releaseDate": "2025"
-    },
-    {
-      "name": "In‑context Time Series Predictor",
-      "publisher": "ICLR 2025",
-      "releaseDate": "2025"
-    },
-    {
-      "name": "CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables",
-      "publisher": "ICML 2024",
-      "releaseDate": "2024"
-    },
-    {
-      "name": "ARM: Refining Multivariate Forecasting with Adaptive Temporal‑Contextual Learning",
-      "publisher": "ICLR 2024",
-      "releaseDate": "2024"
+      "name": "Corresponding-authored Papers",
+      "note": "Project lead supervising undergraduate researchers.",
+      "items": [
+        {
+          "name": "StretchTime: Adaptive Time Series Forecasting via Symplectic Attention",
+          "authors": "Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu",
+          "publisher": "ICML 2026 under review",
+          "releaseDate": "2026"
+        },
+        {
+          "name": "CAPS: Unifying Attention, Recurrence, and Alignment in Transformer-based Time Series Forecasting",
+          "authors": "Viresh Pati, Yubin Kim, Vinh Pham, Jevon Twitty, Shihao Yang, Jiecheng Lu",
+          "publisher": "ICML 2026 under review",
+          "releaseDate": "2026"
+        }
+      ]
     }
+  ],
+  "service": [
+    "Reviewer for NeurIPS 2024, ICLR 2025, ICML 2025, NeurIPS 2025, ICLR 2026, AISTATS 2026, ICML 2026, NeurIPS 2026, and the IEEE Internet of Things Journal."
   ],
   "presentations": [
     {
       "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
       "date": "2026-04-03",
-      "event": "Student Seminar, Georgia Tech Machine Learning Student Seminar",
-      "location": "C1115 Druid Hills, Atlanta, GA",
-      "description": "Student seminar talk on scaling laws, attention expressivity, and the role of architecture in sequence modeling."
+      "event": "PhD Seminar Series, Machine Learning Center, Georgia Institute of Technology",
+      "location": "Atlanta, GA",
+      "description": "Student seminar talk delivered in April 2026."
     },
     {
       "name": "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective",
       "date": "2026-03-10",
-      "event": "Invited Talk, Tsinghua University, Knowledge Engineering Group",
+      "event": "Invited Talk, Knowledge Engineering Group, Tsinghua University (host: Jie Tang)",
       "location": "Online",
-      "description": "Invited online talk on HyperMLP and sequence modeling."
+      "description": "Invited talk delivered in March 2026."
     },
     {
       "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
       "date": "2026-02-13",
-      "event": "PhD Seminar, Georgia Tech ISyE PhD Student Seminar",
-      "location": "ISyE Main Building 126, Atlanta, GA",
-      "description": "Seminar talk on scaling laws, attention expressivity, and the role of architecture in sequence modeling."
+      "event": "PhD Seminar Series, School of ISyE, Georgia Institute of Technology",
+      "location": "Atlanta, GA",
+      "description": "PhD seminar talk delivered in February 2026."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Margaret and Stephen Kendrick PhD Student Fellowship for Research Excellence",
+      "awarder": "Georgia Tech",
+      "date": "2025"
+    },
+    {
+      "title": "M.H. Stewart Fellowship",
+      "awarder": "Georgia Tech",
+      "date": "2023"
+    }
+  ],
+  "grants": [
+    {
+      "title": "Subquadratic HyperMLP via Convolution-Based Sequence Mixing",
+      "funder": "Lambda Research Grant",
+      "role": "PI",
+      "date": "Mar 2026 - Mar 2027"
+    },
+    {
+      "title": "Scaling Zero-Sum Linear Attention for Cross-Modal Foundation Models",
+      "funder": "NVIDIA Academic Grant",
+      "role": "Co-PI",
+      "date": "Apr 2026 - Sept 2026"
+    },
+    {
+      "title": "MTH250051: Advanced Transformer-based Models for Long-term Time Series Forecasting",
+      "funder": "NSF ACCESS Program",
+      "role": "Co-PI",
+      "date": "Sept 2025 - Sept 2026"
     }
   ],
   "teaching": [],

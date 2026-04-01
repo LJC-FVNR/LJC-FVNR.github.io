@@ -13,6 +13,12 @@
       width: 70%;
     }
   }
+
+  .cv-section-note {
+    margin: -0.3rem 0 0.8rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
 </style>
 
 <div class="cv-container">
@@ -80,10 +86,16 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ education.area }}</div>
-          <div class="cv-item-date">{{ education.endDate }}</div>
+          <div class="cv-item-date">{{ education.startDate }}{% if education.endDate %} - {{ education.endDate }}{% endif %}</div>
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ education.institution }}</div>
+          {% if education.advisor %}
+          <div class="cv-item-detail">Advisor: {{ education.advisor }}</div>
+          {% endif %}
+          {% if education.location %}
+          <div class="cv-item-detail">{{ education.location }}</div>
+          {% endif %}
           {% if education.gpa %}
           <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
           {% endif %}
@@ -112,7 +124,10 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ work.company }}</div>
-          {% if work.summary %}
+          {% if work.location %}
+          <div class="cv-item-detail">{{ work.location }}</div>
+          {% endif %}
+          {% if work.summary and work.summary != "" %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}
           {% if work.highlights.size > 0 %}
@@ -148,7 +163,42 @@
   </div>
   {% endif %}
   
-  {% if cv.publications.size > 0 %}
+  {% if cv.publication_groups and cv.publication_groups.size > 0 %}
+  <!-- Publications -->
+  <div class="cv-section">
+    <h2>Publications</h2>
+    {% for group in cv.publication_groups %}
+    <h3>{{ group.name }}</h3>
+    {% if group.note %}
+    <div class="cv-section-note">{{ group.note }}</div>
+    {% endif %}
+    <ul class="cv-list">
+      {% for publication in group.items %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ publication.name }}</div>
+          <div class="cv-item-date">{{ publication.releaseDate }}</div>
+        </div>
+        <div class="cv-item-content">
+          {% if publication.authors %}
+          <div class="cv-item-detail">{{ publication.authors }}</div>
+          {% endif %}
+          <div class="cv-item-subtitle">{{ publication.publisher }}</div>
+          {% if publication.summary %}
+          <div class="cv-item-detail">{{ publication.summary }}</div>
+          {% endif %}
+          {% if publication.website %}
+          <div class="cv-item-detail">
+            <a href="{{ publication.website }}" target="_blank">View Publication</a>
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+  {% elsif cv.publications.size > 0 %}
   <!-- Publications -->
   <div class="cv-section">
     <h2>Publications</h2>
@@ -177,9 +227,9 @@
   {% endif %}
   
   {% if cv.presentations.size > 0 %}
-  <!-- Presentations/Talks -->
+  <!-- Talks -->
   <div class="cv-section">
-    <h2>Presentations</h2>
+    <h2>Talks</h2>
     <ul class="cv-list">
       {% for talk in cv.presentations %}
       <li class="cv-item">
@@ -197,6 +247,66 @@
           {% endif %}
         </div>
       </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.awards and cv.awards.size > 0 %}
+  <!-- Awards -->
+  <div class="cv-section">
+    <h2>Awards</h2>
+    <ul class="cv-list">
+      {% for award in cv.awards %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ award.title }}</div>
+          <div class="cv-item-date">{{ award.date }}</div>
+        </div>
+        <div class="cv-item-content">
+          {% if award.awarder %}
+          <div class="cv-item-subtitle">{{ award.awarder }}</div>
+          {% endif %}
+          {% if award.summary %}
+          <div class="cv-item-detail">{{ award.summary }}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.grants and cv.grants.size > 0 %}
+  <!-- Computing Grants -->
+  <div class="cv-section">
+    <h2>Computing Grants</h2>
+    <ul class="cv-list">
+      {% for grant in cv.grants %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ grant.title }}</div>
+          <div class="cv-item-date">{{ grant.date }}</div>
+        </div>
+        <div class="cv-item-content">
+          <div class="cv-item-subtitle">{{ grant.funder }}{% if grant.role %} - {{ grant.role }}{% endif %}</div>
+          {% if grant.summary %}
+          <div class="cv-item-detail">{{ grant.summary }}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.service and cv.service.size > 0 %}
+  <!-- Service -->
+  <div class="cv-section">
+    <h2>Service</h2>
+    <ul class="cv-highlights">
+      {% for item in cv.service %}
+      <li>{{ item }}</li>
       {% endfor %}
     </ul>
   </div>
