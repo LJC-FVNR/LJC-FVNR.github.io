@@ -2,7 +2,7 @@
 layout: single
 title: "Jiecheng Lu"
 description: >
-  Ph.D. student in Machine Learning at Georgia Tech. Research interests include foundation models, sequence modeling, time series analysis, and linear attention mechanisms.
+  Ph.D. student in Machine Learning at Georgia Tech. Research interests include efficient and expressive sequence modeling, linear attention, long-context reasoning, and time series analysis.
 author_profile: true
 classes: wide
 permalink: /
@@ -152,7 +152,7 @@ permalink: /
   About
 </h2>
 
-I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). I am broadly interested in machine learning for sequential data. My research integrates statistical principles with emerging sequential neural network architectures to develop principled and efficient approaches for **time series forecasting** and **general sequence modeling**.  
+I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). My research focuses on developing sequence-model architectures that improve expressivity under practical compute constraints, spanning attention mechanisms, linear attention, dynamic-MLP views of sequence modeling, and time series foundation models.
 
 <div class="link-row">
   <a class="pill-link" href="mailto:jlu414@gatech.edu" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>

@@ -12,7 +12,7 @@ site_theme               : "gt" # Currently available options are "default", "ai
 title                    : "Jiecheng Lu"
 title_separator          : "-"
 name                     : &name "Jiecheng Lu"
-description              : &description "PhD student @ Gatech, Time Series & ML"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "PhD student @ Georgia Tech, sequence modeling & ML"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ljc-fvnr.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Jiecheng Lu"
   pronouns         : # example: "she/her"  
-  bio              : "ML PhD Student @ Georgia Tech. Time Series • Sequence Modeling."
+  bio              : "ML PhD Student @ Georgia Tech. Sequence Modeling • Efficient Attention • Time Series."
   location         : "Atlanta, GA"
   # employer         : "Red Brick University"
   uri              : # URL
@@ -241,6 +241,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  awards:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -296,6 +299,14 @@ defaults:
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _awards
+  - scope:
+      path: ""
+      type: awards
+    values:
+      layout: award
       author_profile: true
       share: true
 

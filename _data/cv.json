@@ -2,15 +2,15 @@
   "basics": {
     "name": "Jiecheng Lu",
     "email": "jlu414@gatech.edu",
-    "phone": "(+1) 470 929 4016",
+    "phone": "",
     "website": "https://ljc-fvnr.github.io/",
-    "summary": "Ph.D. student in Machine Learning at Georgia Tech, advised by Shihao Yang. Research interests include foundation models, general sequence modeling, linear attention mechanisms, and time series analysis.",
+    "summary": "Ph.D. student in Machine Learning at Georgia Tech advised by Shihao Yang. My research focuses on developing sequence-model architectures that improve expressivity under practical compute constraints, spanning attention mechanisms, linear attention, dynamic-MLP views of sequence modeling, and time series foundation models. In the 2024-2026 period, I have published 7 first-author papers at top machine learning venues, including ICLR, ICML, and NeurIPS.",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Atlanta",
       "countryCode": "US",
-      "region": "Georgia"
+      "region": "GA"
     },
     "profiles": [
       {
@@ -20,46 +20,45 @@
       }
     ]
   },
+  "research_interests": "Foundation models; efficient and expressive sequence modeling; linear attention; long-context reasoning; time series analysis; sequence modeling across NLP, vision, and scientific data.",
   "work": [
     {
-      "company": "Tencent",
-      "position": "Data Scientist Intern, Tencent Medical AI Lab (JARVIS Lab)",
+      "company": "Tencent Medical AI Lab (JARVIS Lab)",
+      "position": "Data Scientist Intern",
       "location": "Shenzhen, China",
-      "startDate": "07.2021",
-      "endDate": "07.2022",
+      "startDate": "Jul. 2021",
+      "endDate": "Jul. 2022",
       "summary": "",
       "highlights": [
-        "Led development of deep learning and statistical models for medical insurance forecasting and epidemic monitoring.",
-        "Created technical solutions for medical facilities in four major cities, handling up to 10 million data points daily."
+        "Led development of deep learning and statistical models for medical insurance forecasting and epidemic monitoring; co-authored 2 medical time-series papers, filed 6 patents as first inventor, and delivered technical solutions for medical facilities across 4 major cities handling up to 10 million data points daily."
       ]
     },
     {
-      "company": "Amazon",
-      "position": "Business Analyst Intern, Global Sourcing Team, Amazon Private Brands",
+      "company": "Amazon Private Brands, Global Sourcing Team",
+      "position": "Business Analyst Intern",
       "location": "Shenzhen, China",
-      "startDate": "01.2021",
-      "endDate": "07.2021",
+      "startDate": "Jan. 2021",
+      "endDate": "Jul. 2021",
       "summary": "",
       "highlights": [
-        "Boosted sourcing team performance through data-driven methods, using machine learning and causal inference for cost analysis.",
-        "Developed AWS-based dashboard web apps, aiding in cost decision-making and saving the team over $100,000 monthly in costs."
+        "Applied machine learning and causal inference to cost analysis and sourcing decisions; built AWS-based dashboard web apps that informed decision-making and reported savings of over USD 100,000 monthly."
       ]
     },
     {
-      "company": "Peking University",
-      "position": "Research Assistant, Guanghua School of Management",
+      "company": "Peking University, Guanghua School of Management",
+      "position": "Research Assistant",
       "location": "Beijing, China",
-      "startDate": "09.2020",
-      "endDate": "01.2021",
+      "startDate": "Sep. 2020",
+      "endDate": "Jan. 2021",
       "summary": "",
       "highlights": []
     },
     {
       "company": "Country Garden Group",
-      "position": "Strategic and Data Analytics Intern, New Business Division",
+      "position": "Strategic and Data Analytics Intern",
       "location": "Foshan, China",
-      "startDate": "07.2020",
-      "endDate": "09.2020",
+      "startDate": "Jul. 2020",
+      "endDate": "Sep. 2020",
       "summary": "",
       "highlights": []
     }
@@ -69,10 +68,10 @@
       "institution": "Georgia Institute of Technology",
       "area": "Ph.D. in Machine Learning",
       "studyType": "Ph.D.",
-      "startDate": "08.2023",
-      "endDate": "05.2027",
+      "startDate": "Aug. 2023",
+      "endDate": "present",
       "advisor": "Shihao Yang",
-      "location": "Atlanta, U.S.",
+      "location": "Atlanta, GA",
       "gpa": null,
       "courses": []
     },
@@ -80,18 +79,18 @@
       "institution": "Georgia Institute of Technology",
       "area": "M.S. in Analytics",
       "studyType": "Master's",
-      "startDate": "08.2021",
-      "endDate": "08.2023",
-      "location": "Atlanta, U.S.",
+      "startDate": "Aug. 2021",
+      "endDate": "Aug. 2023",
+      "location": "Atlanta, GA",
       "gpa": null,
       "courses": []
     },
     {
       "institution": "Tianjin University",
-      "area": "Bachelor in Logistics Engineering",
+      "area": "B.S. in Logistics Engineering",
       "studyType": "Bachelor's",
-      "startDate": "09.2016",
-      "endDate": "06.2020",
+      "startDate": "Sep. 2016",
+      "endDate": "Jun. 2020",
       "location": "Tianjin, China",
       "gpa": null,
       "courses": []
@@ -104,14 +103,8 @@
   "publications": [],
   "publication_groups": [
     {
-      "name": "First-authored Papers",
+      "name": "First-authored papers",
       "items": [
-        {
-          "name": "HyperMLP: An Integrated Perspective for Sequence Modeling",
-          "authors": "Jiecheng Lu, Shihao Yang",
-          "publisher": "ICML 2026 under review",
-          "releaseDate": "2026"
-        },
         {
           "name": "Free Energy Mixer",
           "authors": "Jiecheng Lu, Shihao Yang",
@@ -121,9 +114,9 @@
           "summary": "Introduces Free Energy Mixer (FEM), which interprets attention scores as a prior and performs a free-energy readout for channel-wise selective retrieval without increasing asymptotic complexity."
         },
         {
-          "name": "ZeroS: Zero-Sum Linear Attention for Efficient Transformer",
+          "name": "ZeroS: Zero-Sum Linear Attention for Efficient Transformers",
           "authors": "Jiecheng Lu, Xu Han, Yan Sun, Viresh Pati, Yubin Kim, Siddhartha Somani, Shihao Yang",
-          "publisher": "NeurIPS 2025 (Spotlight)",
+          "publisher": "NeurIPS 2025 Spotlight",
           "releaseDate": "2025",
           "website": "https://neurips.cc/virtual/2025/poster/118425"
         },
@@ -161,64 +154,77 @@
           "publisher": "ICLR 2024",
           "releaseDate": "2024",
           "website": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html"
+        },
+        {
+          "name": "HyperMLP: An Integrated Perspective for Sequence Modeling",
+          "authors": "Jiecheng Lu, Shihao Yang",
+          "publisher": "Under review",
+          "releaseDate": "2026"
         }
       ]
     },
     {
-      "name": "Corresponding-authored Papers",
-      "note": "Project lead supervising undergraduate researchers.",
+      "name": "Corresponding-Author Publications and Mentored Research Leadership",
       "items": [
         {
           "name": "StretchTime: Adaptive Time Series Forecasting via Symplectic Attention",
-          "authors": "Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu",
-          "publisher": "ICML 2026 under review",
-          "releaseDate": "2026"
+          "authors": "Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu*",
+          "publisher": "Under review",
+          "releaseDate": "2026",
+          "summary": "*corresponding author; mentored undergraduate first authors"
         },
         {
           "name": "CAPS: Unifying Attention, Recurrence, and Alignment in Transformer-based Time Series Forecasting",
-          "authors": "Viresh Pati, Yubin Kim, Vinh Pham, Jevon Twitty, Shihao Yang, Jiecheng Lu",
-          "publisher": "ICML 2026 under review",
-          "releaseDate": "2026"
+          "authors": "Viresh Pati, Yubin Kim, Vinh Pham, Jevon Twitty, Shihao Yang, Jiecheng Lu*",
+          "publisher": "Under review",
+          "releaseDate": "2026",
+          "summary": "*corresponding author; mentored undergraduate first authors"
         }
       ]
     }
   ],
-  "service": [
-    "Reviewer for NeurIPS 2024, ICLR 2025, ICML 2025, NeurIPS 2025, ICLR 2026, AISTATS 2026, ICML 2026, NeurIPS 2026, and the IEEE Internet of Things Journal."
-  ],
   "presentations": [
-    {
-      "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
-      "date": "2026-04-03",
-      "event": "PhD Seminar Series, Machine Learning Center, Georgia Institute of Technology",
-      "location": "Atlanta, GA",
-      "description": "Student seminar talk delivered in April 2026."
-    },
     {
       "name": "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective",
       "date": "2026-03-10",
-      "event": "Invited Talk, Knowledge Engineering Group, Tsinghua University (host: Jie Tang)",
+      "event": "Invited Talk, Knowledge Engineering Group, Tsinghua University (hosted by Prof. Jie Tang)",
       "location": "Online",
       "description": "Invited talk delivered in March 2026."
     },
     {
       "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
+      "date": "2026-04-03",
+      "event": "PhD Seminar, Georgia Tech Machine Learning Student Seminar",
+      "location": "Atlanta, GA",
+      "description": "Student seminar talk delivered in April 2026."
+    },
+    {
+      "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
       "date": "2026-02-13",
-      "event": "PhD Seminar Series, School of ISyE, Georgia Institute of Technology",
+      "event": "PhD Seminar, Georgia Tech ISyE PhD Student Seminar",
       "location": "Atlanta, GA",
       "description": "PhD seminar talk delivered in February 2026."
     }
   ],
   "awards": [
     {
+      "title": "Best Poster Award (1st Place), AASF AIX Summit 2026",
+      "awarder": "AASF AIX Summit 2026",
+      "date": "2026",
+      "summary": "Poster: Free Energy Mixer",
+      "url": "/awards/2026-aasf-aix-summit-best-poster"
+    },
+    {
       "title": "Margaret and Stephen Kendrick PhD Student Fellowship for Research Excellence",
       "awarder": "Georgia Tech",
-      "date": "2025"
+      "date": "2025",
+      "url": "/awards/2025-kendrick-phd-student-fellowship"
     },
     {
       "title": "M.H. Stewart Fellowship",
       "awarder": "Georgia Tech",
-      "date": "2023"
+      "date": "2023",
+      "url": "/awards/2023-mh-stewart-fellowship"
     }
   ],
   "grants": [
@@ -226,19 +232,67 @@
       "title": "Subquadratic HyperMLP via Convolution-Based Sequence Mixing",
       "funder": "Lambda Research Grant",
       "role": "PI",
-      "date": "Mar 2026 - Mar 2027"
+      "date": "Mar. 2026 - Mar. 2027"
     },
     {
       "title": "Scaling Zero-Sum Linear Attention for Cross-Modal Foundation Models",
       "funder": "NVIDIA Academic Grant",
-      "role": "Co-PI",
-      "date": "Apr 2026 - Sept 2026"
+      "role": "awarded project",
+      "date": "Apr. 2026 - Sep. 2026"
     },
     {
-      "title": "MTH250051: Advanced Transformer-based Models for Long-term Time Series Forecasting",
+      "title": "Advanced Transformer-based Models for Long-term Time Series Forecasting",
       "funder": "NSF ACCESS Program",
-      "role": "Co-PI",
-      "date": "Sept 2025 - Sept 2026"
+      "role": "awarded project",
+      "date": "Sep. 2025 - Sep. 2026"
+    }
+  ],
+  "leadership_service": [
+    {
+      "title": "Research leadership and mentoring",
+      "description": "Since Spring 2025, I have organized and led weekly research discussions for a five-student Georgia Tech undergraduate Sequential AI team, mentoring students on experiment design and paper writing. As of Spring 2026, this team completed three manuscripts: one published paper (ZeroS, NeurIPS 2025 Spotlight) and two ICML 2026 submissions with undergraduate first authors and me as corresponding/final author."
+    },
+    {
+      "title": "Teaching preparation",
+      "description": "Independent instructor (planned), ISyE 4031 Regression and Forecasting, Georgia Tech, Summer 2026. Participant in Georgia Tech's Tech to Teaching program and currently enrolled in CETL 8717 Course Design for Higher Education."
+    },
+    {
+      "title": "Reviewing service",
+      "description": "NeurIPS 2024-2026, ICLR 2025-2026, ICML 2025-2026, and IEEE Internet of Things Journal."
+    }
+  ],
+  "service": [],
+  "research_translation": [
+    {
+      "title": "CDC FluSight forecasting hub",
+      "date": "Fall 2024 - Present",
+      "description": "Submit weekly influenza hospitalization forecasts for all U.S. states to the CDC FluSight forecasting hub (entry name: Gatech-ensemble), translating time-series forecasting research into public-health decision support."
+    }
+  ],
+  "patents": [
+    {
+      "number": "CN115114345B",
+      "title": "Feature Representation Extraction for Time-Series Data"
+    },
+    {
+      "number": "CN114358186B",
+      "title": "Data Processing for Attention-Based Time-Series Forecasting"
+    },
+    {
+      "number": "CN115130656A",
+      "title": "Training an Anomaly Detection Model for Time-Series Data"
+    },
+    {
+      "number": "CN117010542A",
+      "title": "Multi-Source Multimodal Data Prediction"
+    },
+    {
+      "number": "CN117012347A",
+      "title": "Medical Data Generation from Unordered Inputs"
+    },
+    {
+      "number": "CN114676176A",
+      "title": "Interpretable Time-Series Forecasting"
     }
   ],
   "teaching": [],

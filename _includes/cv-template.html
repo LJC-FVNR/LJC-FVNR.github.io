@@ -76,6 +76,14 @@
     <p>{{ cv.basics.summary }}</p>
   </div>
   {% endif %}
+
+  {% if cv.research_interests %}
+  <!-- Research Interests -->
+  <div class="cv-section">
+    <h2>Research Interests</h2>
+    <p>{{ cv.research_interests }}</p>
+  </div>
+  {% endif %}
   
   {% if cv.education.size > 0 %}
   <!-- Education -->
@@ -258,9 +266,20 @@
     <h2>Awards</h2>
     <ul class="cv-list">
       {% for award in cv.awards %}
+      {% assign award_page = site.awards | where: "title", award.title | first %}
+      {% assign award_url = award.url %}
+      {% if award_url == nil or award_url == "" %}
+        {% assign award_url = award_page.url %}
+      {% endif %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ award.title }}</div>
+          <div class="cv-item-title">
+            {% if award_url %}
+            <a href="{{ award_url | relative_url }}">{{ award.title }}</a>
+            {% else %}
+            {{ award.title }}
+            {% endif %}
+          </div>
           <div class="cv-item-date">{{ award.date }}</div>
         </div>
         <div class="cv-item-content">
@@ -300,6 +319,25 @@
   </div>
   {% endif %}
 
+  {% if cv.leadership_service and cv.leadership_service.size > 0 %}
+  <!-- Leadership, Teaching, and Service -->
+  <div class="cv-section">
+    <h2>Leadership, Teaching, and Service</h2>
+    <ul class="cv-list">
+      {% for item in cv.leadership_service %}
+      <li class="cv-item">
+        <div class="cv-item-content">
+          <div class="cv-item-title">{{ item.title }}</div>
+          {% if item.description %}
+          <div class="cv-item-detail">{{ item.description }}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   {% if cv.service and cv.service.size > 0 %}
   <!-- Service -->
   <div class="cv-section">
@@ -331,6 +369,45 @@
           {% if teaching.description %}
           <div class="cv-item-detail">{{ teaching.description }}</div>
           {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.research_translation and cv.research_translation.size > 0 %}
+  <!-- Research Translation -->
+  <div class="cv-section">
+    <h2>Research Translation</h2>
+    <ul class="cv-list">
+      {% for item in cv.research_translation %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ item.title }}</div>
+          <div class="cv-item-date">{{ item.date }}</div>
+        </div>
+        <div class="cv-item-content">
+          {% if item.description %}
+          <div class="cv-item-detail">{{ item.description }}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.patents and cv.patents.size > 0 %}
+  <!-- Patents -->
+  <div class="cv-section">
+    <h2>Patents</h2>
+    <ul class="cv-list">
+      {% for patent in cv.patents %}
+      <li class="cv-item">
+        <div class="cv-item-content">
+          <div class="cv-item-title">{{ patent.number }}</div>
+          <div class="cv-item-detail">{{ patent.title }}</div>
         </div>
       </li>
       {% endfor %}
