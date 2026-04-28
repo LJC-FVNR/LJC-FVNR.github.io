@@ -11,4 +11,6 @@ excerpt: "Best Poster Award (1st Place) at AASF AIX Summit 2026 for the Free Ene
 
 Best Poster Award (1st Place) at AASF AIX Summit 2026 for the poster "Free Energy Mixer."
 
+[Poster (PDF)]({{ "/files/posters/2026-aasf-aix-summit-fem-poster.pdf" | relative_url }})
+
 <img src="{{ "/files/awards/aasf-aix-summit-2026-best-poster.jpg" | relative_url }}" alt="AASF AIX Summit 2026 Best Poster Award certificate" style="max-width: 100%; height: auto;">

@@ -8,6 +8,7 @@ venue: "ICLR 2025 (Poster)"
 authors: "Jiecheng Lu, Yan Sun, Shihao Yang"
 paperurl: "https://openreview.net/forum?id=dCcY2pyNIO"
 paperpdf: "https://arxiv.org/pdf/2405.14982"
+poster: "/files/posters/2025-iclr-ictsp-poster.pdf"
 code: "https://github.com/LJC-FVNR/In-context-Time-Series-Predictor"
 selected: true
 excerpt: "Reformulates TSF as in‑context learning by constructing tokens of (lookback, future) task pairs, enabling Transformers to adapt predictors from context without parameter updates."

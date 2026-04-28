@@ -80,5 +80,9 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% if post.poster %}
+      <p><a href="{{ post.poster | relative_url }}">Download Poster</a></p>
+    {% endif %}
+
   </article>
 </div>

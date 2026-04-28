@@ -5,4 +5,4 @@ tags: [news, acceptance, iclr]
 ---
 
 **Free Energy Mixer** has been **accepted to ICLR 2026**.  
-Links: [OpenReview page](https://openreview.net/forum?id=vjQnKToCnV) · [Code](https://github.com/LJC-FVNR/SequenceLab)
+Links: [OpenReview page](https://openreview.net/forum?id=vjQnKToCnV) · [Code](https://github.com/LJC-FVNR/SequenceLab) · [Poster]({{ "/files/posters/2026-iclr-fem-poster.pdf" | relative_url }})

@@ -8,6 +8,7 @@ venue: "ICML 2025 (Poster), PMLR 267: 40848–40867"
 authors: "Jiecheng Lu, Shihao Yang"
 paperurl: "https://proceedings.mlr.press/v267/lu25r.html"
 paperpdf: "https://raw.githubusercontent.com/mlresearch/v267/main/assets/lu25r/lu25r.pdf"
+poster: "/files/posters/2025-icml-samovar-poster.pdf"
 code: "https://github.com/LJC-FVNR/Structural-Aligned-Mixture-of-VAR"
 selected: true
 excerpt: "Shows that a linear attention layer can be interpreted as a dynamic VAR; proposes SAMoVAR to realign multi‑layer Transformers with autoregressive forecasting for improved interpretability and accuracy."

@@ -5,4 +5,4 @@ tags: [news, acceptance, neurips]
 ---
 
 **ZeroS: Zero‑Sum Linear Attention for Efficient Transformers** has been **accepted to NeurIPS 2025 (Spotlight)**.  
-Links: [NeurIPS page](https://neurips.cc/virtual/2025/poster/118425) · [OpenReview PDF](https://openreview.net/pdf/53b99866f7a487c410012b2077f3c4dc78c72742.pdf)
+Links: [NeurIPS page](https://neurips.cc/virtual/2025/poster/118425) · [OpenReview PDF](https://openreview.net/pdf/53b99866f7a487c410012b2077f3c4dc78c72742.pdf) · [Poster]({{ "/files/posters/2025-neurips-zeros-poster.pdf" | relative_url }})

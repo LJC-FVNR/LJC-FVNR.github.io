@@ -7,6 +7,7 @@ date: 2026-01-26
 venue: "ICLR 2026"
 authors: "Jiecheng Lu, Shihao Yang"
 paperurl: "https://openreview.net/forum?id=vjQnKToCnV"
+poster: "/files/posters/2026-iclr-fem-poster.pdf"
 code: "https://github.com/LJC-FVNR/SequenceLab"
 selected: true
 excerpt: "Introduces Free Energy Mixer (FEM), which interprets (q,k) attention scores as a prior and performs a log-sum-exp free-energy readout to reweight values at the channel level, enabling a smooth transition from mean aggregation to selective channel-wise retrieval without increasing asymptotic complexity."
