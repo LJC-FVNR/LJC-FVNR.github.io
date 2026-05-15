@@ -2,9 +2,9 @@
   "basics": {
     "name": "Jiecheng Lu",
     "email": "jlu414@gatech.edu",
-    "phone": "",
+    "phone": "+1 470-929-4016",
     "website": "https://ljc-fvnr.github.io/",
-    "summary": "Ph.D. student in Machine Learning at Georgia Tech advised by Shihao Yang. My research focuses on developing sequence-model architectures that improve expressivity under practical compute constraints, spanning attention mechanisms, linear attention, dynamic-MLP views of sequence modeling, and time series foundation models. In the 2024-2026 period, I have published 7 first-author papers at top machine learning venues, including ICLR, ICML, and NeurIPS.",
+    "summary": "Ph.D. student in Machine Learning at Georgia Tech advised by Shihao Yang. My research focuses on developing sequence-model architectures that improve expressivity under practical compute constraints, spanning attention mechanisms, linear attention, dynamic-MLP views of sequence modeling, and time series foundation models. In the 2024-2026 period, I have published 9 papers as the main contributor at top machine learning venues, including ICLR, ICML, and NeurIPS.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -106,6 +106,13 @@
       "name": "First-authored papers",
       "items": [
         {
+          "name": "HyperMLP: An Integrated Perspective for Sequence Modeling",
+          "authors": "Jiecheng Lu, Shihao Yang",
+          "publisher": "ICML 2026",
+          "releaseDate": "2026",
+          "website": "/publication/2026-hypermlp"
+        },
+        {
           "name": "Free Energy Mixer",
           "authors": "Jiecheng Lu, Shihao Yang",
           "publisher": "ICLR 2026",
@@ -154,12 +161,6 @@
           "publisher": "ICLR 2024",
           "releaseDate": "2024",
           "website": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/9fc291fef2f9607a46777d367f900a15-Abstract-Conference.html"
-        },
-        {
-          "name": "HyperMLP: An Integrated Perspective for Sequence Modeling",
-          "authors": "Jiecheng Lu, Shihao Yang",
-          "publisher": "Under review",
-          "releaseDate": "2026"
         }
       ]
     },
@@ -169,8 +170,9 @@
         {
           "name": "StretchTime: Adaptive Time Series Forecasting via Symplectic Attention",
           "authors": "Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu*",
-          "publisher": "Under review",
+          "publisher": "ICML 2026",
           "releaseDate": "2026",
+          "website": "/publication/2026-stretchtime",
           "summary": "*corresponding author; mentored undergraduate first authors"
         },
         {
@@ -254,7 +256,7 @@
     },
     {
       "title": "Teaching preparation",
-      "description": "Independent instructor (planned), ISyE 4031 Regression and Forecasting, Georgia Tech, Summer 2026. Participant in Georgia Tech's Tech to Teaching program and currently enrolled in CETL 8717 Course Design for Higher Education."
+      "description": "Independent instructor, ISyE 4031 Regression and Forecasting, Georgia Tech, Summer 2026. Participant in Georgia Tech's Tech to Teaching program and finished CETL 8717 Course Design for Higher Education."
     },
     {
       "title": "Reviewing service",
@@ -295,6 +297,14 @@
       "title": "Interpretable Time-Series Forecasting"
     }
   ],
-  "teaching": [],
+  "teaching": [
+    {
+      "course": "ISyE 4031 Regression and Forecasting",
+      "institution": "Georgia Institute of Technology",
+      "role": "Independent instructor",
+      "date": "2026",
+      "description": "Summer 2026."
+    }
+  ],
   "portfolio": []
 }

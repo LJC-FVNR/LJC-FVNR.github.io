@@ -266,6 +266,7 @@ I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu
       {% if post.paperurl %}<a class="chip" href="{{ post.paperurl }}">Proceedings</a>{% endif %}
       {% if post.code %}<a class="chip" href="{{ post.code }}">Code</a>{% endif %}
       {% if post.arxiv %}<a class="chip" href="{{ post.arxiv }}">arXiv</a>{% endif %}
+      {% if post.posterurl %}<a class="chip" href="{{ post.posterurl }}">Poster page</a>{% endif %}
       {% if post.poster %}<a class="chip" href="{{ post.poster }}">Poster</a>{% endif %}
       {% if post.slides %}<a class="chip" href="{{ post.slides }}">Slides</a>{% endif %}
       {% if post.bibtex %}<a class="chip" href="{{ post.bibtex }}">BibTeX</a>{% endif %}
