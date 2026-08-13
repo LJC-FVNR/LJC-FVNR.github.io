@@ -125,7 +125,7 @@
           "authors": "Jiecheng Lu, Xu Han, Yan Sun, Viresh Pati, Yubin Kim, Siddhartha Somani, Shihao Yang",
           "publisher": "NeurIPS 2025 Spotlight",
           "releaseDate": "2025",
-          "website": "https://neurips.cc/virtual/2025/poster/118425"
+          "website": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1363163299a172662dcf0c0f9932acf6-Abstract-Conference.html"
         },
         {
           "name": "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting",
@@ -255,8 +255,8 @@
       "description": "Since Spring 2025, I have organized and led weekly research discussions for a five-student Georgia Tech undergraduate Sequential AI team, mentoring students on experiment design and paper writing. As of Spring 2026, this team completed three manuscripts: one published paper (ZeroS, NeurIPS 2025 Spotlight) and two ICML 2026 submissions with undergraduate first authors and me as corresponding/final author."
     },
     {
-      "title": "Teaching preparation",
-      "description": "Independent instructor, ISyE 4031 Regression and Forecasting, Georgia Tech, Summer 2026. Participant in Georgia Tech's Tech to Teaching program and finished CETL 8717 Course Design for Higher Education."
+      "title": "Teaching and course design",
+      "description": "Served as the independent instructor for ISyE 4031 Regression and Forecasting at Georgia Tech in Summer 2026, leading RES in person and ASY/RHK online. Participant in Georgia Tech's Tech to Teaching program and completed CETL 8717 Course Design for Higher Education."
     },
     {
       "title": "Reviewing service",
@@ -303,7 +303,7 @@
       "institution": "Georgia Institute of Technology",
       "role": "Independent instructor",
       "date": "2026",
-      "description": "Summer 2026."
+      "description": "Summer 2026; RES (in person), ASY and RHK (online)."
     }
   ],
   "portfolio": []
