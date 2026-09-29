@@ -2,7 +2,7 @@
 layout: single
 title: "Jiecheng Lu"
 description: >
-  Ph.D. student in Machine Learning at Georgia Tech. Research interests include LLM pretraining, efficient and expressive sequence modeling, agentic AI, LLM self-improvement, and time series analysis.
+  Ph.D. candidate in Machine Learning at Georgia Tech. Research interests include LLM pretraining, efficient and expressive sequence modeling, agentic AI, LLM self-improvement, and time series analysis.
 author_profile: true
 classes: wide
 permalink: /
@@ -152,7 +152,7 @@ permalink: /
   About
 </h2>
 
-I am a Ph.D. student in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). I develop sequence-model architectures for LLMs and time series that improve expressivity under practical compute constraints, spanning attention, linear attention, and dynamic MLPs. My ongoing work studies agentic AI behavior and LLM self-improvement through parameter memory folding. Since 2024, I have published 10 papers as the main contributor at ICLR, ICML, and NeurIPS.
+I am a Ph.D. candidate in [Machine Learning at Georgia Tech](https://ml.gatech.edu/) (ISyE), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang). I develop sequence-model architectures for LLMs and time series that improve expressivity under practical compute constraints, spanning attention, linear attention, and dynamic MLPs. My ongoing work studies agentic AI behavior and LLM self-improvement through parameter memory folding. Since 2024, I have published 10 papers as the main contributor at ICLR, ICML, and NeurIPS.
 
 <div class="link-row">
   <a class="pill-link" href="mailto:jlu414@gatech.edu" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
