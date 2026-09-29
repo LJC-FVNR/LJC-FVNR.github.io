@@ -242,7 +242,7 @@
       {% for talk in cv.presentations %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ talk.name }}</div>
+          <div class="cv-item-title">{% if talk.url %}<a href="{{ talk.url | relative_url }}">{{ talk.name }}</a>{% else %}{{ talk.name }}{% endif %}</div>
           <div class="cv-item-date">{{ talk.date | slice: 0, 4 }}</div>
         </div>
         <div class="cv-item-content">
@@ -331,6 +331,18 @@
           {% if item.description %}
           <div class="cv-item-detail">{{ item.description }}</div>
           {% endif %}
+          {% if item.mentees and item.mentees.size > 0 %}
+          <ul class="cv-highlights">
+            {% for mentee in item.mentees %}
+            <li><a href="{{ mentee.url }}" target="_blank">{{ mentee.name }}</a>: {{ mentee.papers }}; <a href="{{ mentee.outcome_url }}" target="_blank">{{ mentee.outcome }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if item.links and item.links.size > 0 %}
+          <div class="cv-item-detail">
+            {% for link in item.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </div>
+          {% endif %}
         </div>
       </li>
       {% endfor %}
@@ -358,7 +370,7 @@
       {% for teaching in cv.teaching %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ teaching.course }}</div>
+          <div class="cv-item-title">{% if teaching.url %}<a href="{{ teaching.url | relative_url }}">{{ teaching.course }}</a>{% else %}{{ teaching.course }}{% endif %}</div>
           <div class="cv-item-date">{{ teaching.date | slice: 0, 4 }}</div>
         </div>
         <div class="cv-item-content">
@@ -406,7 +418,7 @@
       {% for patent in cv.patents %}
       <li class="cv-item">
         <div class="cv-item-content">
-          <div class="cv-item-title">{{ patent.number }}</div>
+          <div class="cv-item-title">{% if patent.url %}<a href="{{ patent.url }}" target="_blank">{{ patent.number }}</a>{% else %}{{ patent.number }}{% endif %}</div>
           <div class="cv-item-detail">{{ patent.title }}</div>
         </div>
       </li>

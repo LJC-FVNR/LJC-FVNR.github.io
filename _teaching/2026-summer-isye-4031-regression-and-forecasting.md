@@ -9,10 +9,10 @@ term: "Summer 2026"
 location: "Atlanta, GA and Online"
 materialsurl: "https://ljc-fvnr.github.io/isye4031-summer2026-labs/"
 showcaseurl: "https://sites.gatech.edu/isye4031-summer2026-project-showcase/"
-excerpt: "Independent instructor for ISyE 4031 in Summer 2026, leading RES in person and ASY/RHK online."
+excerpt: "Independent instructor for ISyE 4031 in Summer 2026: three sections (RES in person, ASY/RHK online), 58 students in 28 project teams."
 ---
 
-In Summer 2026, I served as the independent instructor for ISyE 4031 Regression and Forecasting at Georgia Tech. I was responsible for three sections spanning both in-person and online delivery.
+In Summer 2026, I served as the independent instructor for ISyE 4031 Regression and Forecasting at Georgia Tech. I was responsible for three sections spanning both in-person and online delivery, with 58 students working in 28 project teams. I am a participant in Georgia Tech's Tech to Teaching program and completed CETL 8717 Course Design for Higher Education.
 
 ## Sections
 
@@ -24,5 +24,5 @@ In Summer 2026, I served as the independent instructor for ISyE 4031 Regression 
 
 ## Course resources
 
-<a class="btn" href="https://sites.gatech.edu/isye4031-summer2026-project-showcase/"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Final Project Showcase</a>
-<a class="btn" href="https://ljc-fvnr.github.io/isye4031-summer2026-labs/"><i class="fas fa-book-open" aria-hidden="true"></i> Course Materials</a>
+<a class="btn btn--inverse" href="https://sites.gatech.edu/isye4031-summer2026-project-showcase/"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Final Project Showcase</a>
+<a class="btn btn--inverse" href="https://ljc-fvnr.github.io/isye4031-summer2026-labs/"><i class="fas fa-book-open" aria-hidden="true"></i> Course Materials</a>
