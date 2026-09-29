@@ -47,6 +47,9 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
       {% endif %}
+      {% if author.openreview %}
+        <li><a href="{{ author.openreview }}"><i class="fas fa-fw fa-book-open icon-pad-right" aria-hidden="true"></i>OpenReview</a></li>
+      {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
       {% endif %}
@@ -165,6 +168,9 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
+      {% if author.cv_pdf %}
+        <li><a href="{{ author.cv_pdf | prepend: base_path }}"><i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>CV (PDF)</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>

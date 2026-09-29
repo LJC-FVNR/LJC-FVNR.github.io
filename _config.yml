@@ -31,6 +31,7 @@ author:
   # employer         : "Red Brick University"
   uri              : # URL
   email            : "jlu414@gatech.edu" 
+  cv_pdf           : "/files/cv.pdf" # shown as the last sidebar link
 
   # Academic websites
   academia         : # URL
@@ -39,6 +40,7 @@ author:
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0008-3453-8569"
+  openreview       : "https://openreview.net/profile?id=%7EJiecheng_Lu1"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
