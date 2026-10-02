@@ -234,6 +234,75 @@
   </div>
   {% endif %}
   
+  {% if cv.leadership_service and cv.leadership_service.size > 0 %}
+  <!-- Leadership, Teaching, and Service -->
+  <div class="cv-section">
+    <h2>Leadership, Teaching, and Service</h2>
+    <ul class="cv-list">
+      {% for item in cv.leadership_service %}
+      <li class="cv-item">
+        <div class="cv-item-content">
+          <div class="cv-item-title">{{ item.title }}</div>
+          {% if item.description %}
+          <div class="cv-item-detail">{{ item.description }}</div>
+          {% endif %}
+          {% if item.mentees and item.mentees.size > 0 %}
+          <ul class="cv-highlights">
+            {% for mentee in item.mentees %}
+            <li><a href="{{ mentee.url }}" target="_blank">{{ mentee.name }}</a>: {{ mentee.papers }}; <a href="{{ mentee.outcome_url }}" target="_blank">{{ mentee.outcome }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if item.links and item.links.size > 0 %}
+          <div class="cv-item-detail">
+            {% for link in item.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.service and cv.service.size > 0 %}
+  <!-- Service -->
+  <div class="cv-section">
+    <h2>Service</h2>
+    <ul class="cv-highlights">
+      {% for item in cv.service %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if cv.teaching.size > 0 %}
+  <!-- Teaching -->
+  <div class="cv-section">
+    <h2>Teaching</h2>
+    <ul class="cv-list">
+      {% for teaching in cv.teaching %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{% if teaching.url %}<a href="{{ teaching.url | relative_url }}">{{ teaching.course }}</a>{% else %}{{ teaching.course }}{% endif %}</div>
+          <div class="cv-item-date">{{ teaching.date | slice: 0, 4 }}</div>
+        </div>
+        <div class="cv-item-content">
+          <div class="cv-item-subtitle">{{ teaching.institution }}</div>
+          {% if teaching.role %}
+          <div class="cv-item-detail">Role: {{ teaching.role }}</div>
+          {% endif %}
+          {% if teaching.description %}
+          <div class="cv-item-detail">{{ teaching.description }}</div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   {% if cv.presentations.size > 0 %}
   <!-- Talks -->
   <div class="cv-section">
@@ -319,75 +388,6 @@
   </div>
   {% endif %}
 
-  {% if cv.leadership_service and cv.leadership_service.size > 0 %}
-  <!-- Leadership, Teaching, and Service -->
-  <div class="cv-section">
-    <h2>Leadership, Teaching, and Service</h2>
-    <ul class="cv-list">
-      {% for item in cv.leadership_service %}
-      <li class="cv-item">
-        <div class="cv-item-content">
-          <div class="cv-item-title">{{ item.title }}</div>
-          {% if item.description %}
-          <div class="cv-item-detail">{{ item.description }}</div>
-          {% endif %}
-          {% if item.mentees and item.mentees.size > 0 %}
-          <ul class="cv-highlights">
-            {% for mentee in item.mentees %}
-            <li><a href="{{ mentee.url }}" target="_blank">{{ mentee.name }}</a>: {{ mentee.papers }}; <a href="{{ mentee.outcome_url }}" target="_blank">{{ mentee.outcome }}</a></li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          {% if item.links and item.links.size > 0 %}
-          <div class="cv-item-detail">
-            {% for link in item.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
-          </div>
-          {% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-  {% if cv.service and cv.service.size > 0 %}
-  <!-- Service -->
-  <div class="cv-section">
-    <h2>Service</h2>
-    <ul class="cv-highlights">
-      {% for item in cv.service %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-  
-  {% if cv.teaching.size > 0 %}
-  <!-- Teaching -->
-  <div class="cv-section">
-    <h2>Teaching</h2>
-    <ul class="cv-list">
-      {% for teaching in cv.teaching %}
-      <li class="cv-item">
-        <div class="cv-item-header">
-          <div class="cv-item-title">{% if teaching.url %}<a href="{{ teaching.url | relative_url }}">{{ teaching.course }}</a>{% else %}{{ teaching.course }}{% endif %}</div>
-          <div class="cv-item-date">{{ teaching.date | slice: 0, 4 }}</div>
-        </div>
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ teaching.institution }}</div>
-          {% if teaching.role %}
-          <div class="cv-item-detail">Role: {{ teaching.role }}</div>
-          {% endif %}
-          {% if teaching.description %}
-          <div class="cv-item-detail">{{ teaching.description }}</div>
-          {% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
   {% if cv.research_translation and cv.research_translation.size > 0 %}
   <!-- Research Translation -->
   <div class="cv-section">
@@ -402,6 +402,9 @@
         <div class="cv-item-content">
           {% if item.description %}
           <div class="cv-item-detail">{{ item.description }}</div>
+          {% endif %}
+          {% if item.paper %}
+          <div class="cv-item-detail">{{ item.paper.role }} of <a href="{{ item.paper.url }}" target="_blank"><em>{{ item.paper.title }}</em></a> ({{ item.paper.status }}).</div>
           {% endif %}
         </div>
       </li>

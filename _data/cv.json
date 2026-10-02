@@ -325,7 +325,13 @@
     {
       "title": "CDC FluSight forecasting hub",
       "date": "Fall 2024 - Present",
-      "description": "Submit weekly influenza hospitalization forecasts for all U.S. states to the CDC FluSight forecasting hub (entry name: Gatech-ensemble), translating time-series forecasting research into public-health decision support."
+      "description": "Submit weekly influenza hospitalization forecasts for all U.S. states to the CDC FluSight forecasting hub (entry name: Gatech-ensemble), translating time-series forecasting research into public-health decision support.",
+      "paper": {
+        "role": "Co-author",
+        "title": "Multi-season evaluation and analysis of categorical trend forecasts of influenza hospital admissions in the United States",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.31.26361843v1",
+        "status": "medRxiv preprint, 2026; submitted to Nature Communications"
+      }
     }
   ],
   "patents": [
