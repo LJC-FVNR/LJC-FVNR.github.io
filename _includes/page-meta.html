@@ -1,0 +1,37 @@
+{% comment %} The facts under an interior page's title, by collection. {% endcomment %}
+{% assign c = page.collection %}
+{% if c == 'publications' %}
+  {% assign conf = page.venue_short | default: page.venue | split: ' ' | first %}
+  {% capture me %}<b>{{ site.author.name }}</b>{% endcapture %}
+  <div class="page-meta">
+    <span class="venue"><span class="vn">{{ conf }}</span> <span class="yr">{{ page.date | date: '%Y' }}</span></span>
+    {% if page.venue contains 'Spotlight' %}<span class="badge">Spotlight</span>{% elsif page.venue contains 'Oral' %}<span class="badge">Oral</span>{% endif %}
+    {% if page.venue contains '), ' %}<span>{{ page.venue | split: '), ' | last }}</span>{% endif %}
+  </div>
+  {% if page.authors %}<p class="page-authors">{{ page.authors | replace: site.author.name, me }}</p>{% endif %}
+  {% include paper-links.html post=page class='page-links' %}
+  {% if page.excerpt %}<p class="lede">{{ page.excerpt | strip_html | strip }}</p>{% endif %}
+{% elsif c == 'talks' %}
+  <div class="page-meta">
+    <span>{{ page.type | default: page.talk_type }}, {{ page.venue }}</span>
+    {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%b %-d, %Y' }}</time>
+  </div>
+  {% if page.host %}<p class="page-authors">{{ page.host | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+  {% if page.slides %}<p class="page-links"><a class="btn is-primary" href="{{ page.slides | relative_url }}">Slides (PDF)</a></p>{% endif %}
+{% elsif c == 'teaching' %}
+  <div class="page-meta">
+    <span>{{ page.type }}, {{ page.venue }}</span>
+    {% if page.term %}<span class="mono">{{ page.term }}</span>{% endif %}
+    {% if page.location %}<span>{{ page.location }}</span>{% endif %}
+  </div>
+{% elsif c == 'awards' %}
+  <div class="page-meta">
+    {% if page.awarder %}<span>{{ page.awarder }}</span>{% endif %}
+    {% if page.award_date %}<span class="mono">{{ page.award_date }}</span>{% endif %}
+  </div>
+{% elsif c == 'posts' %}
+  <div class="page-meta"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></div>
+{% elsif page.modified %}
+  <div class="page-meta"><span>Updated <time datetime="{{ page.modified | date: '%Y-%m-%d' }}">{{ page.modified | date: '%B %-d, %Y' }}</time></span></div>
+{% endif %}

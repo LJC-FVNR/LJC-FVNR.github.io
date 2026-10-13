@@ -1,0 +1,28 @@
+{% comment %} Invited talks first, then by date; repeat deliveries of one talk share a row. {% endcomment %}
+{% assign by_date = site.talks | sort: 'date' | reverse %}
+{% assign invited = by_date | where_exp: 't', "t.type contains 'Invited'" %}
+{% assign others = '' | split: '' %}
+{% for t in by_date %}{% unless t.type contains 'Invited' %}{% assign others = others | push: t %}{% endunless %}{% endfor %}
+{% assign talks = invited | concat: others | group_by: 'title' %}
+<section class="section wrap" id="talks" aria-labelledby="talks-h">
+  <div class="section-head"><h2 id="talks-h">Talks</h2><a class="more" href="{{ '/talks/' | relative_url }}">All talks</a></div>
+  <div class="list">
+    {% for group in talks limit: 4 %}
+      {% assign latest = group.items.first %}
+      {% assign runs = group.items | sort: 'date' %}
+      <div class="row">
+        <div class="what">
+          <a class="title" href="{{ latest.url | relative_url }}">{{ group.name }}</a>
+          {% if group.size == 1 %}
+            <p class="sub">{{ latest.type }}, {{ latest.venue }}</p>
+            {% if latest.host %}<p class="sub">{{ latest.host | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+          {% else %}
+            <p class="sub">{{ latest.type }}: {% for run in runs %}<a href="{{ run.url | relative_url }}">{{ run.venue }}</a> ({{ run.date | date: '%b' }}){% unless forloop.last %} and {% endunless %}{% endfor %}</p>
+          {% endif %}
+          {% if latest.slides %}<p class="links"><a href="{{ latest.slides | relative_url }}">Slides</a></p>{% endif %}
+        </div>
+        <span class="when">{% if group.size == 1 %}{{ latest.date | date: '%b %Y' }}{% else %}{% for run in runs %}{{ run.date | date: '%b' }}{% unless forloop.last %} &amp; {% endunless %}{% endfor %} {{ latest.date | date: '%Y' }}{% endif %}</span>
+      </div>
+    {% endfor %}
+  </div>
+</section>

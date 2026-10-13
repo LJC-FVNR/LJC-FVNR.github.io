@@ -1,11 +1,7 @@
 ---
 layout: archive
-title: "Page Archive"
+title: "Page archive"
 permalink: /page-archive/
-author_profile: false
 ---
-
-{% include base_path %}
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign pages = site.pages | where_exp: 'p', 'p.title' | sort: 'title' %}
+<div class="list is-tight">{% for post in pages %}{% include archive-single.html %}{% endfor %}</div>

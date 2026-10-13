@@ -4,7 +4,7 @@
     "email": "jlu414@gatech.edu",
     "phone": "+1 470-929-4016",
     "website": "https://ljc-fvnr.github.io/",
-    "summary": "Ph.D. candidate in Machine Learning at Georgia Tech advised by Shihao Yang. I develop sequence-model architectures for LLMs and time series that improve expressivity under practical compute constraints, spanning attention, linear attention, and dynamic MLPs. My ongoing work studies agentic AI behavior and LLM self-improvement through parameter memory folding. Since 2024, I have published 10 papers as the main contributor at ICLR, ICML, and NeurIPS.",
+    "summary": "Ph.D. candidate in Machine Learning at Georgia Tech advised by Shihao Yang. I work on how sequence models read context, store knowledge, and rewrite their own weights, toward self-improving LLMs and agents. My architectures make LLMs and time-series models more expressive under practical compute constraints; I now study parametric memory as a route to continual learning. Since 2024, I have published 10 papers as the main contributor at ICLR, ICML, and NeurIPS.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -20,7 +20,7 @@
       }
     ]
   },
-  "research_interests": "Foundation models and LLM pretraining; efficient and expressive sequence modeling; agentic AI; LLM self-improvement; in-context reasoning; time series analysis; sequence modeling across NLP, vision, and scientific data.",
+  "research_interests": "Parametric memory and continual learning; LLM self-improvement; agentic AI; foundation models and LLM pretraining; efficient and expressive sequence modeling; latent and in-context reasoning; time series analysis.",
   "work": [
     {
       "company": "Tencent Medical AI Lab (JARVIS Lab)",
@@ -103,6 +103,7 @@
   "publications": [],
   "publication_groups": [
     {
+      "id": "sequence",
       "name": "NextGen sequence modeling",
       "note": "LLM pretraining, efficient and expressive attention, and dynamic MLPs",
       "items": [
@@ -131,6 +132,7 @@
       ]
     },
     {
+      "id": "dynamics",
       "name": "Attention meets dynamical systems",
       "note": "VAR/ARMA attention and symplectic position encoding beyond RoPE",
       "items": [
@@ -159,6 +161,7 @@
       ]
     },
     {
+      "id": "forecasting",
       "name": "Forecasting for real-world decisions",
       "note": "In-context, multivariate, and distribution-valued time series",
       "items": [

@@ -1,0 +1,27 @@
+{% assign awards = site.awards | sort: 'date' | reverse %}
+<section class="section wrap" id="honors" aria-labelledby="honors-h">
+  <div class="section-head"><h2 id="honors-h">Honors and grants</h2><a class="more" href="{{ '/awards/' | relative_url }}">All awards</a></div>
+  <h3 class="subhead">Fellowships and awards</h3>
+  <div class="list is-tight">
+    {% for a in awards %}
+    <div class="row">
+      <span class="what"><a class="title" href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.awarder %}{% unless a.title contains a.awarder %}<span class="muted">, {{ a.awarder }}</span>{% endunless %}{% endif %}</span>
+      <span class="when">{% if a.award_date %}{{ a.award_date }}{% else %}{{ a.date | date: '%Y' }}{% endif %}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% if site.data.cv.grants.size > 0 %}
+  <h3 class="subhead">Computing grants</h3>
+  <div class="list is-tight">
+    {% for g in site.data.cv.grants %}
+    <div class="row">
+      <div class="what">
+        <span class="title">{{ g.funder }}</span>{% if g.role %}<span class="muted">, {{ g.role }}</span>{% endif %}
+        <p class="detail">{{ g.title }}</p>
+      </div>
+      <span class="when">{{ g.date | replace: '. ', ' ' | replace: ' - ', '–' }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>

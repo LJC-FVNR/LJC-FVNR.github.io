@@ -1,0 +1,19 @@
+{% assign courses = site.teaching | sort: 'date' | reverse %}
+{% if courses.size > 0 %}
+<section class="section wrap" id="teaching" aria-labelledby="teaching-h">
+  <div class="section-head"><h2 id="teaching-h">Teaching</h2></div>
+  <div class="list">
+    {% for c in courses %}
+    <div class="row">
+      <div class="what">
+        <a class="title" href="{{ c.url | relative_url }}">{{ c.title }}</a>
+        <p class="sub">{{ c.type }}, {{ c.venue }}</p>
+        {% if c.summary %}<p class="detail">{{ c.summary }}</p>{% endif %}
+        {% if c.showcaseurl or c.materialsurl %}<p class="links">{% if c.showcaseurl %}<a href="{{ c.showcaseurl }}">Final project showcase</a>{% endif %}{% if c.materialsurl %}<a href="{{ c.materialsurl }}">Course materials</a>{% endif %}</p>{% endif %}
+      </div>
+      <span class="when">{% if c.term %}{{ c.term }}{% else %}{{ c.date | date: '%Y' }}{% endif %}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

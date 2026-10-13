@@ -1,0 +1,13 @@
+{% assign news = site.posts | where_exp: 'p', "p.tags contains 'news'" %}
+{% if news == empty %}{% assign news = site.posts %}{% endif %}
+<section class="section wrap" id="news" aria-labelledby="news-h">
+  <div class="section-head"><h2 id="news-h">News</h2><a class="more" href="{{ '/year-archive/' | relative_url }}">All news</a></div>
+  <div class="list is-tight">
+    {% for post in news limit: 5 %}
+    <div class="row">
+      <a class="what title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time class="when" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %Y' }}</time>
+    </div>
+    {% endfor %}
+  </div>
+</section>

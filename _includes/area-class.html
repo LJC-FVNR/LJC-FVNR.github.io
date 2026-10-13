@@ -1,0 +1,1 @@
+{% assign area_class = '' %}{% for g in site.data.cv.publication_groups %}{% if g.id == include.area %}{% assign area_class = 'a' | append: forloop.index %}{% endif %}{% endfor %}

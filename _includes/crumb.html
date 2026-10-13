@@ -1,0 +1,10 @@
+{% assign crumb_t = nil %}
+{% case page.collection %}
+{% when 'publications' %}{% assign crumb_t = 'Publications' %}{% assign crumb_u = '/publications/' %}
+{% when 'talks' %}{% assign crumb_t = 'Talks' %}{% assign crumb_u = '/talks/' %}
+{% when 'teaching' %}{% assign crumb_t = 'Teaching' %}{% assign crumb_u = '/teaching/' %}
+{% when 'awards' %}{% assign crumb_t = 'Awards' %}{% assign crumb_u = '/awards/' %}
+{% when 'posts' %}{% assign crumb_t = 'News' %}{% assign crumb_u = '/year-archive/' %}
+{% when 'portfolio' %}{% assign crumb_t = 'Portfolio' %}{% assign crumb_u = '/portfolio/' %}
+{% endcase %}
+{% if crumb_t %}<p class="crumb"><a href="{{ crumb_u | relative_url }}">{{ crumb_t }}</a></p>{% endif %}

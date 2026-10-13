@@ -2,13 +2,9 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+lede: "Courses taught as an independent instructor, with course materials and student project work."
 ---
-
-{% include base_path %}
-
-<p>Courses taught as an independent instructor, with selected course materials and student project work.</p>
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign courses = site.teaching | sort: 'date' | reverse %}
+<div class="list">
+{% for post in courses %}{% include archive-single.html excerpt=true %}{% endfor %}
+</div>

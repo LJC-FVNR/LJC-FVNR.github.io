@@ -3,6 +3,7 @@ title: "Free Energy Mixer"
 collection: publications
 permalink: /publication/2026-free-energy-mixer
 category: conferences
+area: sequence
 date: 2026-01-26
 venue: "ICLR 2026"
 authors: "Jiecheng Lu, Shihao Yang"

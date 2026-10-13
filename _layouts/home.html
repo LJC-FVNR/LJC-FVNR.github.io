@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% assign groups = site.data.cv.publication_groups %}
+<section class="hero wrap" aria-labelledby="hero-name">
+  <div class="ident">
+    <img src="{{ '/images/profile-avatar.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="60" height="60">
+    <div>
+      <h1 id="hero-name">{{ site.author.name }}</h1>
+      <p class="role">{{ page.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+    </div>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-text">
+      {% comment %} One .tok per word for the attention map; "^" groups (wide-screen lines) and "~" groups (never split) become nowrap spans. {% endcomment %}
+      {% assign chunks = page.statement | split: ' ' %}
+      <p class="statement" data-statement>{% for chunk in chunks %}{% assign lines = chunk | split: '^' %}{% if lines.size > 1 %}<span class="ph-w">{% endif %}{% for part in lines %}{% assign words = part | split: '~' %}{% if words.size > 1 %}<span class="ph">{% endif %}{% for word in words %}<span class="tok">{{ word }}</span>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}{% if words.size > 1 %}</span>{% endif %}{% unless forloop.last %}&#32;{% endunless %}{% endfor %}{% if lines.size > 1 %}</span>{% endif %} {% endfor %}</p>
+      <div class="about">{{ content }}</div>
+      <ul class="contact" aria-label="Contact and profiles">
+        <li><a class="mail" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+        {% for link in site.author.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+        <li><a href="{{ site.author.cv_pdf | relative_url }}">CV (PDF)</a></li>
+      </ul>
+    </div>
+    <figure class="attn" data-attn>
+      <svg role="presentation" aria-hidden="true" focusable="false"></svg>
+      <ul class="areas" aria-label="Research areas">
+        {% for group in groups %}<li><a class="a{{ forloop.index }}" href="#area-{{ group.id }}" data-kind="{{ forloop.index }}">{{ group.name }}</a></li>{% endfor %}
+      </ul>
+      <figcaption>Illustrative causal attention over the sentence, decoded one word at a time. <span class="hover-only">Hover over</span><span class="touch-only">Tap</span> a word to see what it attends to.<span class="readout" data-readout aria-live="polite"></span></figcaption>
+    </figure>
+  </div>
+  <div class="spectrum" aria-hidden="true"></div>
+</section>
+
+{% include home/news.html %}
+{% include home/research.html %}
+{% include home/talks.html %}
+{% include home/mentoring.html %}
+{% include home/teaching.html %}
+{% include home/honors.html %}

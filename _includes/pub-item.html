@@ -1,0 +1,17 @@
+{% comment %}
+  One publication. Title (the link) over authors on the left; the venue and year
+  close the title line on a light tint, a Spotlight or Oral under it.
+  Params: post, h (heading element, default h3), tldr (show the excerpt), dot (area dot).
+{% endcomment %}
+{% assign p = include.post %}
+{% assign h = include.h | default: 'h3' %}
+{% assign conf = p.venue_short | default: p.venue | split: ' ' | first %}
+{% capture me %}<b>{{ site.author.name }}</b>{% endcapture %}
+<article class="pub">
+  <{{ h }} class="pub-title">{% if include.dot %}<span class="dot" aria-hidden="true"></span>{% endif %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a></{{ h }}>
+  <p class="venue"><span class="vn">{{ conf }}</span> <span class="yr">{{ p.date | date: '%Y' }}</span></p>
+  {% if p.authors %}<p class="pub-authors">{{ p.authors | replace: site.author.name, me }}</p>{% endif %}
+  {% if p.venue contains 'Spotlight' %}<p class="badge">Spotlight</p>{% elsif p.venue contains 'Oral' %}<p class="badge">Oral</p>{% endif %}
+  {% if include.tldr and p.excerpt %}<p class="pub-tldr">{{ p.excerpt | strip_html | strip }}</p>{% endif %}
+  {% include paper-links.html post=p %}
+</article>

@@ -1,0 +1,8 @@
+{% assign lead = site.data.cv.leadership_service | where_exp: 'x', 'x.mentees' | first %}
+{% if lead %}
+<section class="section wrap" id="mentoring" aria-labelledby="mentoring-h">
+  <div class="section-head"><h2 id="mentoring-h">Research leadership and mentoring</h2></div>
+  <p class="section-lede">{{ lead.description }}</p>
+  {% include roster.html mentees=lead.mentees %}
+</section>
+{% endif %}

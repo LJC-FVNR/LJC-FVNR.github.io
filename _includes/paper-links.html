@@ -1,0 +1,17 @@
+{% assign p = include.post %}
+{% if p.paperurl %}
+  {% if p.paperurl contains 'openreview.net' %}{% assign page_label = 'OpenReview' %}
+  {% elsif p.paperurl contains 'proceedings' or p.paperurl contains 'mlr.press' %}{% assign page_label = 'Proceedings' %}
+  {% elsif p.paperurl contains '/virtual/' %}{% assign page_label = 'Conference page' %}
+  {% else %}{% assign page_label = 'Paper' %}{% endif %}
+{% endif %}
+<p class="{{ include.class | default: 'links' }}">
+  {% if p.paperpdf %}<a href="{{ p.paperpdf }}"{% if include.class %} class="btn is-primary"{% endif %}>PDF</a>{% endif %}
+  {% if p.paperurl %}<a href="{{ p.paperurl }}"{% if include.class %} class="btn"{% endif %}>{{ page_label }}</a>{% endif %}
+  {% if p.arxiv %}<a href="{{ p.arxiv }}"{% if include.class %} class="btn"{% endif %}>arXiv</a>{% endif %}
+  {% if p.code %}<a href="{{ p.code }}"{% if include.class %} class="btn"{% endif %}>Code</a>{% endif %}
+  {% if p.poster %}<a href="{{ p.poster | relative_url }}"{% if include.class %} class="btn"{% endif %}>Poster</a>{% endif %}
+  {% if p.posterurl %}<a href="{{ p.posterurl }}"{% if include.class %} class="btn"{% endif %}>Poster page</a>{% endif %}
+  {% if p.slides %}<a href="{{ p.slides | relative_url }}"{% if include.class %} class="btn"{% endif %}>Slides</a>{% endif %}
+  {% if p.bibtex %}<a href="{{ p.bibtex | relative_url }}"{% if include.class %} class="btn"{% endif %}>BibTeX</a>{% endif %}
+</p>

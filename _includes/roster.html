@@ -1,0 +1,10 @@
+<div class="roster">
+  {% for m in include.mentees %}
+    {% assign papers = m.papers | split: '; ' %}
+    <div class="mentee">
+      <a class="nm" href="{{ m.url }}">{{ m.name }}</a>
+      <span class="papers">{{ papers[0] }}{% if papers[1] %}; <i>{{ papers[1] }}</i>{% endif %}</span>
+      {% if m.outcome_url %}<a class="dest" href="{{ m.outcome_url }}">{{ m.outcome }}</a>{% else %}<span class="dest">{{ m.outcome }}</span>{% endif %}
+    </div>
+  {% endfor %}
+</div>

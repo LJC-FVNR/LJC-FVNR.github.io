@@ -1,25 +1,16 @@
-{% include base_path %}
-
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endif %}
-
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}
-</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="who"><b>{{ site.author.name }}</b>, {{ site.author.location }}. <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <ul class="elsewhere">
+      {% for link in site.author.links %}<li><a href="{{ link.url }}">{{ link.label }}</a></li>{% endfor %}
+      {% if site.author.cv_pdf %}<li><a href="{{ site.author.cv_pdf | relative_url }}">CV (PDF)</a></li>{% endif %}
+    </ul>
+    <p class="fine">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</span>
+      <span>Updated <time datetime="{{ site.time | date: '%Y-%m-%d' }}">{{ site.time | date: '%b %-d, %Y' }}</time></span>
+      <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>
+      {% unless site.atom_feed.hide %}<a href="{{ '/feed.xml' | relative_url }}">Feed</a>{% endunless %}
+      <a href="{{ '/terms/' | relative_url }}">Terms and privacy</a>
+    </p>
+  </div>
+</footer>

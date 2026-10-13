@@ -2,36 +2,29 @@
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
 ---
 
-{% include base_path %}
+Every page on this site. There is also an [XML sitemap]({{ '/sitemap.xml' | relative_url }}) for search engines.
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
-
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+<section class="section year-group" aria-labelledby="sm-pages">
+  <div class="section-head"><h2 id="sm-pages">Pages</h2></div>
+  <div class="list is-tight">
+  {% assign pages = site.pages | where_exp: 'p', 'p.title' | where_exp: 'p', 'p.sitemap != false' | sort: 'title' %}
+  {% for post in pages %}{% include archive-single.html %}{% endfor %}
+  </div>
+</section>
+<section class="section year-group" aria-labelledby="sm-news">
+  <div class="section-head"><h2 id="sm-news">News</h2></div>
+  <div class="list is-tight">
+  {% for post in site.posts %}{% include archive-single.html %}{% endfor %}
+  </div>
+</section>
+{% for collection in site.collections %}{% unless collection.output == false or collection.label == 'posts' or collection.docs.size == 0 %}
+<section class="section year-group" aria-labelledby="sm-{{ collection.label }}">
+  <div class="section-head"><h2 id="sm-{{ collection.label }}">{{ collection.label | capitalize }}</h2></div>
+  <div class="list is-tight">
+  {% assign docs = collection.docs | sort: 'date' | reverse %}
+  {% for post in docs %}{% include archive-single.html %}{% endfor %}
+  </div>
+</section>
+{% endunless %}{% endfor %}

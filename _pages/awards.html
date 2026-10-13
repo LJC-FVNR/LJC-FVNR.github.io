@@ -2,10 +2,8 @@
 layout: archive
 title: "Awards"
 permalink: /awards/
-author_profile: true
 ---
-
-{% assign awards = site.awards | sort: "date" | reverse %}
-{% for post in awards %}
-  {% include archive-single-award.html %}
-{% endfor %}
+{% assign awards = site.awards | sort: 'date' | reverse %}
+<div class="list">
+{% for post in awards %}{% include archive-single-award.html %}{% endfor %}
+</div>

@@ -7,12 +7,12 @@ permalink: /talks/2026-03-10-tsinghua-hypermlp
 venue: "Tsinghua University, Knowledge Engineering Group"
 date: 2026-03-10
 location: "Online"
+host: "Hosted by [Prof. Jie Tang](https://keg.cs.tsinghua.edu.cn/jietang/), founder of [Z.ai](https://z.ai)"
+slides: "/files/talks/2026-03-10-tsinghua-hypermlp.pdf"
 excerpt: "Invited online talk at the Tsinghua University Knowledge Engineering Group, hosted by Prof. Jie Tang (founder of Z.ai), on HyperMLP and an integrated view of sequence modeling."
 ---
 
 This invited online talk was hosted by the Knowledge Engineering Group at Tsinghua University on March 10, 2026 (Beijing Time), at the invitation of [Prof. Jie Tang](https://keg.cs.tsinghua.edu.cn/jietang/), founder of [Z.ai](https://z.ai).
-
-[Slides (PDF)]({{ "/files/talks/2026-03-10-tsinghua-hypermlp.pdf" | relative_url }})
 
 <small><a href="{{ "/files/talks/2026-03-10-tsinghua-certificate.png" | relative_url }}">Certificate of Appreciation</a></small>
 

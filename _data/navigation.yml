@@ -1,33 +1,24 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# Header links, in order. A link is marked current on pages whose URL contains
+# `match`, or on every page of `collection`.
 
 main:
   - title: "Publications"
     url: /publications/
+    match: /publication
 
-  # - title: "Talks"
-  #   url: /talks/    
+  - title: "Talks"
+    url: /talks/
+    match: /talks/
 
   - title: "Teaching"
     url: /teaching/
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  - title: "Blog"
+    match: /teaching/
+
+  - title: "News"
     url: /year-archive/
-    
+    match: /year-archive/
+    collection: posts
+
   - title: "CV"
     url: /cv-json/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #   url: /markdown/
+    match: /cv

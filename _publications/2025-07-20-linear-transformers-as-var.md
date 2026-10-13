@@ -2,12 +2,14 @@
 title: "Linear Transformers as VAR Models: Aligning Autoregressive Attention Mechanisms with Autoregressive Forecasting"
 collection: publications
 category: conferences
+area: dynamics
 permalink: /publication/2025-linear-transformers-as-var
 date: 2025-07-20
 venue: "ICML 2025 (Poster), PMLR 267: 40848–40867"
 authors: "Jiecheng Lu, Shihao Yang"
 paperurl: "https://proceedings.mlr.press/v267/lu25r.html"
 paperpdf: "https://raw.githubusercontent.com/mlresearch/v267/main/assets/lu25r/lu25r.pdf"
+arxiv: "https://arxiv.org/abs/2502.07244"
 poster: "/files/posters/2025-icml-samovar-poster.pdf"
 code: "https://github.com/LJC-FVNR/Structural-Aligned-Mixture-of-VAR"
 selected: true

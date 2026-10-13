@@ -1,32 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title>Time Series Icon</title>
-
-  <rect x="0" y="0" width="512" height="512" rx="96" fill="#857437"/>
-
-  <g opacity="0.35" stroke="#FFFFFF" fill="none" stroke-width="10">
-    <rect x="64" y="80" width="384" height="320" rx="44"/>
-  </g>
-
-  <g stroke="#FFFFFF" opacity="0.22" stroke-linecap="round">
-    <line x1="128" y1="360" x2="128" y2="392" stroke-width="10"/>
-    <line x1="208" y1="360" x2="208" y2="392" stroke-width="10"/>
-    <line x1="288" y1="360" x2="288" y2="392" stroke-width="10"/>
-    <line x1="368" y1="360" x2="368" y2="392" stroke-width="10"/>
-  </g>
-
-  <path d="M84 340 L156 280 L228 312 L300 224 L372 252 L428 172"
-        fill="none" stroke="#F9F6E5" stroke-width="36"
-        stroke-linecap="round" stroke-linejoin="round"/>
-
-
-  <g fill="#FFFFFF" stroke="#003057" stroke-width="12">
-    <circle cx="84"  cy="340" r="20"/>
-    <circle cx="156" cy="280" r="20"/>
-    <circle cx="228" cy="312" r="20"/>
-    <circle cx="300" cy="224" r="20"/>
-    <circle cx="372" cy="252" r="20"/>
-    <circle cx="428" cy="172" r="20"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<rect width="32" height="32" rx="7" fill="#ffffff"/>
+<circle cx="7" cy="7" r="2.52" fill="#4f46e5"/>
+<circle cx="7" cy="13" r="1.8" fill="#e0560f"/>
+<circle cx="13" cy="13" r="2.52" fill="#4f46e5"/>
+<circle cx="7" cy="19" r="1.8" fill="#e0560f"/>
+<circle cx="13" cy="19" r="1.5" fill="#4f46e5"/>
+<circle cx="19" cy="19" r="2.52" fill="#4f46e5"/>
+<circle cx="7" cy="25" r="1.8" fill="#e0560f"/>
+<circle cx="13" cy="25" r="1.92" fill="#0b8a7e"/>
+<circle cx="19" cy="25" r="1.5" fill="#4f46e5"/>
+<circle cx="25" cy="25" r="2.52" fill="#4f46e5"/>
 </svg>

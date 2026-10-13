@@ -9,6 +9,7 @@ term: "Summer 2026"
 location: "Atlanta, GA and Online"
 materialsurl: "https://ljc-fvnr.github.io/isye4031-summer2026-labs/"
 showcaseurl: "https://sites.gatech.edu/isye4031-summer2026-project-showcase/"
+summary: "Three sections (one in person, two online), 58 students in 28 project teams. Participant in Georgia Tech's Tech to Teaching program; completed CETL 8717 Course Design for Higher Education."
 excerpt: "Independent instructor for ISyE 4031 in Summer 2026: three sections (RES in person, ASY/RHK online), 58 students in 28 project teams."
 ---
 
@@ -24,5 +25,5 @@ In Summer 2026, I served as the independent instructor for ISyE 4031 Regression 
 
 ## Course resources
 
-<a class="btn btn--inverse" href="https://sites.gatech.edu/isye4031-summer2026-project-showcase/"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Final Project Showcase</a>
-<a class="btn btn--inverse" href="https://ljc-fvnr.github.io/isye4031-summer2026-labs/"><i class="fas fa-book-open" aria-hidden="true"></i> Course Materials</a>
+<a class="btn btn--inverse" href="https://sites.gatech.edu/isye4031-summer2026-project-showcase/">Final Project Showcase</a>
+<a class="btn btn--inverse" href="https://ljc-fvnr.github.io/isye4031-summer2026-labs/">Course Materials</a>

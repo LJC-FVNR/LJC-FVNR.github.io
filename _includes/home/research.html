@@ -1,0 +1,34 @@
+<section class="section wrap" id="research" aria-labelledby="research-h">
+  <div class="section-head"><h2 id="research-h">Research</h2><a class="more" href="{{ '/publications/' | relative_url }}">All publications</a></div>
+  {% if page.research.intro %}<p class="section-lede">{{ page.research.intro }}</p>{% endif %}
+  {% for group in site.data.cv.publication_groups %}
+    {% assign pubs = site.publications | where: 'area', group.id | sort: 'date' | reverse %}
+    <div class="area a{{ forloop.index }}" id="area-{{ group.id }}">
+      <div class="area-head">
+        <h3>{{ group.name }}</h3>
+        {% if group.note %}<p>{{ group.note }}</p>{% endif %}
+        {% assign now = page.research.now[group.id] %}
+        {% if now %}<p class="area-now">{{ now }}</p>{% endif %}
+      </div>
+      <ol class="pubs">
+        {% for post in pubs %}<li>{% include pub-item.html post=post h='h4' %}</li>{% endfor %}
+      </ol>
+    </div>
+  {% endfor %}
+  {% for item in site.data.cv.research_translation %}
+    <div class="area is-plain" id="translation">
+      <div class="area-head"><h3>Research translation</h3></div>
+      <div class="list">
+        <div class="row">
+          <div class="what">
+            <span class="title">{{ item.title }}</span>
+            <p class="detail">{{ item.description }}</p>
+            {% if item.paper %}<p class="detail">{{ item.paper.role }} of <a href="{{ item.paper.url }}">{{ item.paper.title }}</a> ({{ item.paper.status }}).</p>{% endif %}
+          </div>
+          <span class="when">{{ item.date | replace: ' - ', '–' }}</span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  <p class="legend">* Corresponding author.</p>
+</section>

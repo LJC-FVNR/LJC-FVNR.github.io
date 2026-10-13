@@ -12,7 +12,7 @@ site_theme               : "gt" # Currently available options are "default", "ai
 title                    : "Jiecheng Lu"
 title_separator          : "-"
 name                     : &name "Jiecheng Lu"
-description              : &description "PhD candidate @ Georgia Tech, sequence modeling & ML"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "PhD candidate @ Georgia Tech: self-improving LLMs and agents, parametric memory, and sequence-model architectures"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ljc-fvnr.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Jiecheng Lu"
   pronouns         : # example: "she/her"  
-  bio              : "ML PhD Candidate @ Georgia Tech. Sequence Modeling • LLMs • Agentic AI • Time Series."
+  bio              : "ML PhD candidate @ Georgia Tech. Parametric memory • LLM self-improvement • Agentic AI • Sequence modeling."
   location         : "Atlanta, GA"
   # employer         : "Red Brick University"
   uri              : # URL
@@ -80,17 +80,17 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-  links:
+  links: # shown, in this order, in the homepage hero and the footer
     - label: "Google Scholar"
       url: "https://scholar.google.com/citations?user=H_Bz5A0AAAAJ"
-    - label: "ORCID"
-      url: "https://orcid.org/0009-0008-3453-8569"
     - label: "OpenReview"
       url: "https://openreview.net/profile?id=%7EJiecheng_Lu1"
     - label: "GitHub"
       url: "https://github.com/LJC-FVNR"
     - label: "LinkedIn"
       url: "https://www.linkedin.com/in/jiecheng-l-b01a491a4/"
+    - label: "ORCID"
+      url: "https://orcid.org/0009-0008-3453-8569"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -153,7 +153,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "og-card.png" # social preview (1200x630) in /images/
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
