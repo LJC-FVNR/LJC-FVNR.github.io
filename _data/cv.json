@@ -310,7 +310,7 @@
   "leadership_service": [
     {
       "title": "Research leadership and mentoring",
-      "description": "Since fall 2024, I have led Sequential AI, an undergraduate research team at Georgia Tech. I mentored the undergraduate first authors of StretchTime (ICML 2026) and served as its last and corresponding author.",
+      "description": "Since fall 2024, I have led a team of Georgia Tech undergraduates working on sequence modeling. For StretchTime (ICML 2026), I mentored the paper’s undergraduate first authors and served as its last and corresponding author.",
       "mentees": [
         {
           "name": "Yubin Kim",
@@ -357,8 +357,20 @@
       ]
     },
     {
-      "title": "Reviewing service",
-      "description": "NeurIPS 2024–2026, ICLR 2025–2026, ICML 2025–2026, AISTATS 2026, and IEEE Internet of Things Journal."
+      "id": "peer-review",
+      "title": "Peer review",
+      "conferences": [
+        {"name": "NeurIPS", "years": "2024–2026"},
+        {"name": "ICLR", "years": "2025–2027"},
+        {"name": "ICML", "years": "2025–2026"},
+        {"name": "ACL", "years": "2026"},
+        {"name": "AISTATS", "years": "2026–2027"}
+      ],
+      "journals": [
+        {"name": "IEEE Transactions on Pattern Analysis and Machine Intelligence", "short": "IEEE TPAMI"},
+        {"name": "IEEE Transactions on Emerging Topics in Computing", "short": "IEEE TETC"},
+        {"name": "IEEE Internet of Things Journal", "short": "IEEE Internet of Things Journal"}
+      ]
     }
   ],
   "service": [],

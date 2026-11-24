@@ -30,7 +30,7 @@ lede: "Main-conference papers, newest first. Each dot marks the paper's research
       <div class="what">
         <a class="title" href="{{ paper.url }}">{{ paper.title | escape }}</a>
         <p class="sub">{{ paper.authors | escape | replace: site.author.name, my_name }}</p>
-        <p class="detail">{{ paper.venue | escape }}{% if paper.related %} · <a href="{{ paper.related | relative_url }}">Main-conference paper</a>{% endif %}</p>
+        <p class="detail">{{ paper.venue | escape }}{% if paper.authorship %} · {{ paper.authorship | escape }}{% endif %}{% if paper.related %} · <a href="{{ paper.related | relative_url }}">Main-conference paper</a>{% endif %}</p>
       </div>
       <span class="when">{{ paper.year }}</span>
     </li>

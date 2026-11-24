@@ -1,27 +1,24 @@
-{% comment %} Invited talks first, then by date; repeat deliveries of one talk share a row. {% endcomment %}
 {% assign by_date = site.talks | where_exp: 't', 't.homepage != false' | sort: 'date' | reverse %}
-{% assign invited = by_date | where_exp: 't', "t.type contains 'Invited'" %}
-{% assign others = '' | split: '' %}
-{% for t in by_date %}{% unless t.type contains 'Invited' %}{% assign others = others | push: t %}{% endunless %}{% endfor %}
-{% assign talks = invited | concat: others | group_by: 'title' %}
+{% assign featured = by_date | where: 'featured', true %}
+{% assign others = by_date | where_exp: 't', 't.featured != true' %}
+{% assign talks = featured | concat: others | group_by: 'title' %}
 <section class="section wrap" id="talks" aria-labelledby="talks-h">
-  <div class="section-head"><h2 id="talks-h">Talks</h2><a class="more" href="{{ '/talks/' | relative_url }}">All talks</a></div>
+  <div class="section-head"><h2 id="talks-h">Selected talks</h2><a class="more" href="{{ '/talks/' | relative_url }}">All talks</a></div>
   <div class="list">
     {% for group in talks limit: 4 %}
-      {% assign latest = group.items.first %}
       {% assign runs = group.items | sort: 'date' %}
+      {% assign latest = runs.last %}
+      {% assign years = runs | group_by_exp: 'run', "run.date | date: '%Y'" %}
       <div class="row">
         <div class="what">
           <a class="title" href="{{ latest.url | relative_url }}">{{ group.name }}</a>
           {% if group.size == 1 %}
-            <p class="sub">{{ latest.type }}, {{ latest.venue }}</p>
-            {% if latest.host %}<p class="sub">{{ latest.host | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+            <p class="sub">{{ latest.venue }} · {{ latest.type }}{% if latest.slides %} · <a href="{{ latest.slides | relative_url }}">Slides</a>{% endif %}</p>
           {% else %}
-            <p class="sub">{{ latest.type }}: {% for run in runs %}<a href="{{ run.url | relative_url }}">{{ run.venue }}</a> ({{ run.date | date: '%b' }}){% unless forloop.last %} and {% endunless %}{% endfor %}</p>
+            <p class="sub">{% for run in runs %}<a href="{{ run.url | relative_url }}">{{ run.venue }}</a> <time datetime="{{ run.date | date: '%F' }}">({% if years.size == 1 %}{{ run.date | date: '%b' }}{% else %}{{ run.date | date: '%b %Y' }}{% endif %})</time>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
           {% endif %}
-          {% if latest.slides %}<p class="links"><a href="{{ latest.slides | relative_url }}">Slides</a></p>{% endif %}
         </div>
-        <span class="when">{% if group.size == 1 %}{{ latest.date | date: '%b %Y' }}{% else %}{% for run in runs %}{{ run.date | date: '%b' }}{% unless forloop.last %} &amp; {% endunless %}{% endfor %} {{ latest.date | date: '%Y' }}{% endif %}</span>
+        {% if group.size == 1 %}<time class="when" datetime="{{ latest.date | date: '%F' }}">{{ latest.date | date: '%b %Y' }}</time>{% elsif years.size == 1 %}<span class="when">{{ years.first.name }}</span>{% endif %}
       </div>
     {% endfor %}
   </div>

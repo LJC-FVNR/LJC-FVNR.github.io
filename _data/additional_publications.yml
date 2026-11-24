@@ -61,3 +61,9 @@
     venue: arXiv:2605.11287
     year: 2026
     url: https://arxiv.org/abs/2605.11287
+  - title: 'CAPS: Unifying Attention, Recurrence, and Alignment in Transformer-based Time Series Forecasting'
+    authors: Viresh Pati, Yubin Kim, Vinh Pham, Jevon Twitty, Shihao Yang, Jiecheng Lu
+    venue: arXiv:2602.02729
+    authorship: Co-corresponding author with Shihao Yang
+    year: 2026
+    url: https://arxiv.org/abs/2602.02729

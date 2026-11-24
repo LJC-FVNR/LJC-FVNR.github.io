@@ -1,6 +1,7 @@
 ---
 title: "From Attention Mechanisms to Memory Systems in Sequence Models"
 collection: talks
+featured: true
 type: "Research Fellow Candidate Presentation"
 permalink: /talks/2026-11-12-harvard-kempner-memory-systems
 venue: "Kempner Institute, Harvard University"

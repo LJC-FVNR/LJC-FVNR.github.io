@@ -1,7 +1,8 @@
 {% assign courses = site.teaching | sort: 'date' | reverse %}
-{% if courses.size > 0 %}
+{% assign reviewing = site.data.cv.leadership_service | where: 'id', 'peer-review' | first %}
+{% if courses.size > 0 or reviewing %}
 <section class="section wrap" id="teaching" aria-labelledby="teaching-h">
-  <div class="section-head"><h2 id="teaching-h">Teaching</h2></div>
+  <div class="section-head"><h2 id="teaching-h">Teaching and service</h2></div>
   <div class="list">
     {% for c in courses %}
     <div class="row">
@@ -14,6 +15,14 @@
       <span class="when">{% if c.term %}{{ c.term }}{% else %}{{ c.date | date: '%Y' }}{% endif %}</span>
     </div>
     {% endfor %}
+    {% if reviewing %}
+    <div class="row">
+      <div class="what">
+        <a class="title" href="{{ '/cv-json/' | relative_url }}#{{ reviewing.id }}">{{ reviewing.title }}</a>
+        <p class="sub">{{ reviewing.conferences | map: 'name' | join: ', ' }} · {{ reviewing.journals | map: 'short' | join: ', ' }}</p>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </section>
 {% endif %}

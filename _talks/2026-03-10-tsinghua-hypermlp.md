@@ -1,6 +1,7 @@
 ---
 title: "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective"
 collection: talks
+featured: true
 type: "Invited Talk"
 talk_type: "Invited Talk"
 permalink: /talks/2026-03-10-tsinghua-hypermlp

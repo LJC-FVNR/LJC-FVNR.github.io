@@ -97,10 +97,12 @@
   <div class="section-head"><h2 id="cv-service">Teaching and service</h2></div>
   <div class="list">
     {% for item in service %}
-    <div class="row">
+    <div class="row"{% if item.id %} id="{{ item.id }}"{% endif %}>
       <div class="what">
         <span class="title">{{ item.title }}</span>
         {% if item.description %}<p class="detail">{{ item.description }}</p>{% endif %}
+        {% if item.conferences %}<p class="detail"><strong>Conferences</strong> · {% for conference in item.conferences %}{{ conference.name }} {{ conference.years }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+        {% if item.journals %}<p class="detail"><strong>Journals</strong> · {{ item.journals | map: 'name' | array_to_sentence_string }}</p>{% endif %}
         {% if item.links.size > 0 %}<p class="links">{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</p>{% endif %}
       </div>
     </div>
