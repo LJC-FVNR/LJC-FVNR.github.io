@@ -254,6 +254,12 @@ a:hover { text-decoration-color: currentColor; }
   .ident img { width: 52px; height: 52px; }
   .ident h1 { font-size: 24px; }
 }
+@media (max-width: 559px) {
+  .ident { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px 14px; }
+  .ident > div { display: contents; }
+  .ident .role { grid-column: 1 / -1; margin: 0; }
+  .ident .job-market { text-wrap: balance; }
+}
 
 /* ---------- sections ---------- */
 
