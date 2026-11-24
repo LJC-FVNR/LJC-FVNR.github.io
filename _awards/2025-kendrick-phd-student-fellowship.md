@@ -6,9 +6,10 @@ permalink: /awards/2025-kendrick-phd-student-fellowship
 awarder: "Georgia Tech"
 date: 2025-01-01
 award_date: "2025"
-excerpt: "Fellowship for research excellence awarded by Georgia Tech."
+field: "Analytics and Machine Learning"
+excerpt: "Awarded in the area of Analytics and Machine Learning."
 ---
 
-The Margaret and Stephen Kendrick PhD Student Fellowship for Research Excellence is a Georgia Tech fellowship recognizing PhD student research excellence.
+Awarded in the area of Analytics and Machine Learning by Georgia Tech’s H. Milton Stewart School of Industrial and Systems Engineering.
 
 <img src="{{ "/files/awards/kendrick-phd-student-fellowship.jpg" | relative_url }}" alt="Margaret and Stephen Kendrick PhD Student Fellowship certificate" style="max-width: 100%; height: auto;">

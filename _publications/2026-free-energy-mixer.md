@@ -8,6 +8,7 @@ date: 2026-01-26
 venue: "ICLR 2026"
 authors: "Jiecheng Lu, Shihao Yang"
 paperurl: "https://openreview.net/forum?id=vjQnKToCnV"
+paperpdf: "https://proceedings.iclr.cc/paper_files/paper/2026/file/5236f6de5c7f15e76978a5c492966aa7-Paper-Conference.pdf"
 poster: "/files/posters/2026-iclr-fem-poster.pdf"
 code: "https://github.com/LJC-FVNR/SequenceLab"
 selected: true

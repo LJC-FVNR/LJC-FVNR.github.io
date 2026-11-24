@@ -2,7 +2,7 @@
   <div class="section-head"><h2 id="research-h">Research</h2><a class="more" href="{{ '/publications/' | relative_url }}">All publications</a></div>
   {% if page.research.intro %}<p class="section-lede">{{ page.research.intro }}</p>{% endif %}
   {% for group in site.data.cv.publication_groups %}
-    {% assign pubs = site.publications | where: 'area', group.id | sort: 'date' | reverse %}
+    {% assign pubs = site.publications | where: 'category', 'conferences' | where: 'selected', true | where: 'area', group.id | sort: 'date' | reverse %}
     <div class="area a{{ forloop.index }}" id="area-{{ group.id }}">
       <div class="area-head">
         <h3>{{ group.name }}</h3>
@@ -21,7 +21,7 @@
       <div class="list">
         <div class="row">
           <div class="what">
-            <span class="title">{{ item.title }}</span>
+            {% if item.url %}<a class="title" href="{{ item.url }}">{{ item.title }}</a>{% else %}<span class="title">{{ item.title }}</span>{% endif %}
             <p class="detail">{{ item.description }}</p>
             {% if item.paper %}<p class="detail">{{ item.paper.role }} of <a href="{{ item.paper.url }}">{{ item.paper.title }}</a> ({{ item.paper.status }}).</p>{% endif %}
           </div>

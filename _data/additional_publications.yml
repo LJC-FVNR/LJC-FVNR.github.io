@@ -1,0 +1,63 @@
+- id: workshop-papers
+  title: Workshop papers
+  items:
+  - title: 'The Grade Says Little, the Score Orders: AI Reviewer Panels Against a Venue''s Ratings and Decisions'
+    authors: Jiecheng Lu, Shihao Yang
+    venue: NeurIPS 2026 Workshop AI-Native Academia
+    year: 2026
+    url: https://openreview.net/forum?id=ZdyUuxGxJ5
+  - title: Target-Token Asymmetry Can Masquerade as Depth Specialization
+    authors: Danlin Li, Miao Li, Xu Han, Jiecheng Lu
+    venue: NeurIPS 2026 Workshop on Interpretability for Discovery
+    year: 2026
+    url: https://openreview.net/forum?id=mOjzm8ppWG
+  - title: 'Free Energy Mixer: Value-Aware Attention Readout for Efficient Sequence Models'
+    authors: Jiecheng Lu, Shihao Yang
+    venue: COLM 2026 Workshop on Efficient Reasoning
+    year: 2026
+    url: https://openreview.net/forum?id=nle6oVAIOB
+    related: /publication/2026-free-energy-mixer
+  - title: 'FasterWeight-MLP Attention: Rethinking Sequence Modeling from a Neural-Network-Native Perspective'
+    authors: Jiecheng Lu, Shihao Yang
+    venue: COLM 2026 Workshop on Efficient Reasoning
+    year: 2026
+    url: https://openreview.net/forum?id=72oUyetBb1
+  - title: 'Attention as a Dynamic MLP: A Lens on the Expressivity-Efficiency Gap'
+    authors: Jiecheng Lu, Shihao Yang
+    venue: COLM 2026 Workshop on Efficient Reasoning
+    year: 2026
+    url: https://openreview.net/forum?id=jFjOzM8HyY
+  - title: 'StretchTime: Adaptive Time Series Forecasting via Symplectic Attention'
+    authors: Yubin Kim, Viresh Pati, Jevon Twitty, Vinh Pham, Shihao Yang, Jiecheng Lu
+    venue: ICML 2026 Workshop Forecast
+    year: 2026
+    url: https://openreview.net/forum?id=wFBzV0hWw1
+    related: /publication/2026-stretchtime
+  - title: Transformer-Based Next-Step Prediction for Queue Length Distribution
+    authors: Jieqi Di, Jiecheng Lu, Runhua Wu, Yuwei Zhou
+    venue: NeurIPS 2025 ML×OR Workshop
+    year: 2025
+    url: https://openreview.net/forum?id=ErSFgi45jD
+- id: conference-posters
+  title: Conference posters
+  items:
+  - title: Value-Aware Posterior Readout for Expressive Sequence Modeling via Free Energy Mixer
+    authors: Jiecheng Lu, Shihao Yang
+    venue: STAI-X 2026
+    year: 2026
+    url: https://openreview.net/forum?id=n965PEhMr3
+    related: /publication/2026-free-energy-mixer
+- id: preprints
+  title: Preprints
+  items:
+  - title: 'Match the Canvas, Not Just the Answer: Predictability-Aware SFT for Diffusion Language Models'
+    authors: Miao Li, Hanyang Jiang, Hengyu Fu, Baihe Huang, Yating Liu, Yuhang Cai, Changkun Guan, Zhongzhu Chen, Jiecheng Lu, Michael
+      A. Boateng, Pascal Van Hentenryck
+    venue: arXiv:2610.18001
+    year: 2026
+    url: https://arxiv.org/abs/2610.18001
+  - title: 'Beyond Similarity: Temporal Operator Attention for Time Series Analysis'
+    authors: Jevon Twitty, Vinh Pham, Nitiwith Rotchanarak, Viresh Pati, Yubin Kim, Shihao Yang, Jiecheng Lu
+    venue: arXiv:2605.11287
+    year: 2026
+    url: https://arxiv.org/abs/2605.11287

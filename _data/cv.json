@@ -4,7 +4,7 @@
     "email": "jlu414@gatech.edu",
     "phone": "+1 470-929-4016",
     "website": "https://ljc-fvnr.github.io/",
-    "summary": "Ph.D. candidate in Machine Learning at Georgia Tech advised by Shihao Yang. I work on how sequence models read context, store knowledge, and rewrite their own weights, toward self-improving LLMs and agents. My architectures make LLMs and time-series models more expressive under practical compute constraints; I now study parametric memory as a route to continual learning. Since 2024, I have published 10 papers as the main contributor at ICLR, ICML, and NeurIPS.",
+    "summary": "I am a Ph.D. candidate in Machine Learning at Georgia Tech, based in the H. Milton Stewart School of Industrial and Systems Engineering (ISyE) and advised by Shihao Yang. I develop architectures and learning methods for foundation models and scientific sequence data. My work has led to 10 papers accepted or published at ICLR, ICML, and NeurIPS, including 9 as first author and 1 as corresponding author.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -23,6 +23,16 @@
   "research_interests": "Parametric memory and continual learning; LLM self-improvement; agentic AI; foundation models and LLM pretraining; efficient and expressive sequence modeling; latent and in-context reasoning; time series analysis.",
   "work": [
     {
+      "company": "Georgia Institute of Technology",
+      "position": "Graduate Research and Teaching Assistant",
+      "location": "Atlanta, GA",
+      "startDate": "Aug. 2023",
+      "endDate": "Present",
+      "highlights": [
+        "Graduate Teaching Assistant in Fall 2026, following a Graduate Research Assistant appointment."
+      ]
+    },
+    {
       "company": "Tencent Medical AI Lab (JARVIS Lab)",
       "position": "Data Scientist Intern",
       "location": "Shenzhen, China",
@@ -30,7 +40,7 @@
       "endDate": "Jul. 2022",
       "summary": "",
       "highlights": [
-        "Led development of deep learning and statistical models for medical insurance forecasting and epidemic monitoring; co-authored 2 medical time-series papers, filed 6 patents as first inventor, and delivered technical solutions for medical facilities across 4 major cities handling up to 10 million data points daily."
+        "Developed deep learning and statistical models for medical insurance forecasting and epidemic monitoring. Filed six patents as first inventor and delivered forecasting tools for medical facilities in four cities, processing up to 10 million data points a day."
       ]
     },
     {
@@ -69,11 +79,12 @@
       "area": "Ph.D. in Machine Learning",
       "studyType": "Ph.D.",
       "startDate": "Aug. 2023",
-      "endDate": "Apr. 2027 (expected)",
+      "endDate": "May 2027 (expected)",
       "advisor": "Shihao Yang",
       "location": "Atlanta, GA",
       "gpa": null,
-      "courses": []
+      "courses": [],
+      "home_school": "H. Milton Stewart School of Industrial and Systems Engineering (ISyE)"
     },
     {
       "institution": "Georgia Institute of Technology",
@@ -87,7 +98,7 @@
     },
     {
       "institution": "Tianjin University",
-      "area": "B.S. in Logistics Engineering",
+      "area": "Bachelor of Management (B.M.) in Logistics Engineering",
       "studyType": "Bachelor's",
       "startDate": "Sep. 2016",
       "endDate": "Jun. 2020",
@@ -198,12 +209,25 @@
   ],
   "presentations": [
     {
-      "name": "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective",
-      "date": "2026-03-10",
-      "event": "Invited Talk, Knowledge Engineering Group, Tsinghua University (hosted by Prof. Jie Tang, founder of Z.ai)",
+      "name": "From Attention Mechanisms to Memory Systems in Sequence Models",
+      "date": "2026-11-12",
+      "event": "Research Fellow Candidate Presentation, Kempner Institute, Harvard University",
       "location": "Online",
-      "description": "Invited talk delivered in March 2026.",
-      "url": "/talks/2026-03-10-tsinghua-hypermlp"
+      "url": "/talks/2026-11-12-harvard-kempner-memory-systems"
+    },
+    {
+      "name": "Expressivity-Oriented Sequence Modeling: Rethinking Attention Beyond Efficiency",
+      "date": "2026-11-02",
+      "event": "Job Market Showcase, INFORMS Annual Meeting",
+      "location": "San Francisco, CA",
+      "url": "/talks/2026-11-02-informs-expressivity"
+    },
+    {
+      "name": "Signed Free-Energy Readouts: A General Sequence Module Beyond Convex Attention",
+      "date": "2026-10-31",
+      "event": "10th INFORMS Workshop on Data Science",
+      "location": "San Francisco, CA",
+      "url": "/talks/2026-10-31-informs-ds-signed-free-energy"
     },
     {
       "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
@@ -212,6 +236,14 @@
       "location": "Atlanta, GA",
       "description": "Student seminar talk delivered in April 2026.",
       "url": "/talks/2026-04-03-georgia-tech-ml-student-seminar"
+    },
+    {
+      "name": "Rethinking Sequence Modeling with HyperMLP: An Integrated Architectural Perspective",
+      "date": "2026-03-10",
+      "event": "Invited Talk, Knowledge Engineering Group, Tsinghua University (hosted by Prof. Jie Tang, founder of Z.ai)",
+      "location": "Online",
+      "description": "Invited talk delivered in March 2026.",
+      "url": "/talks/2026-03-10-tsinghua-hypermlp"
     },
     {
       "name": "Rethinking Sequence Modeling: LLM Scaling Laws, Expressivity-Efficiency Tradeoffs, and the Role of Architecture",
@@ -223,6 +255,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "Robert Goodell Brown PhD Student Fellowship for Excellence in Research",
+      "awarder": "Georgia Tech",
+      "date": "2026",
+      "summary": "Awarded in the area of Data Science and Statistics"
+    },
     {
       "title": "George Fellowship",
       "awarder": "Georgia Tech",
@@ -240,7 +278,7 @@
       "title": "Margaret and Stephen Kendrick PhD Student Fellowship for Research Excellence",
       "awarder": "Georgia Tech",
       "date": "2025",
-      "url": "/awards/2025-kendrick-phd-student-fellowship"
+      "summary": "Awarded in the area of Analytics and Machine Learning"
     },
     {
       "title": "M.H. Stewart Fellowship",
@@ -272,7 +310,7 @@
   "leadership_service": [
     {
       "title": "Research leadership and mentoring",
-      "description": "Since Fall 2024, I have organized a Georgia Tech undergraduate Sequential AI team, leading each project through the full research cycle, from idea to publication.",
+      "description": "Since fall 2024, I have led Sequential AI, an undergraduate research team at Georgia Tech. I mentored the undergraduate first authors of StretchTime (ICML 2026) and served as its last and corresponding author.",
       "mentees": [
         {
           "name": "Yubin Kim",
@@ -320,21 +358,22 @@
     },
     {
       "title": "Reviewing service",
-      "description": "NeurIPS 2024-2026, ICLR 2025-2026, ICML 2025-2026, and IEEE Internet of Things Journal."
+      "description": "NeurIPS 2024–2026, ICLR 2025–2026, ICML 2025–2026, AISTATS 2026, and IEEE Internet of Things Journal."
     }
   ],
   "service": [],
   "research_translation": [
     {
-      "title": "CDC FluSight forecasting hub",
+      "title": "CDC FluSight",
       "date": "Fall 2024 - Present",
-      "description": "Submit weekly influenza hospitalization forecasts for all U.S. states to the CDC FluSight forecasting hub (entry name: Gatech-ensemble), translating time-series forecasting research into public-health decision support.",
+      "description": "Since fall 2024, I have submitted weekly forecasts of influenza hospital admissions for all U.S. states to CDC FluSight, the national influenza forecasting program. The forecasts appear under the model name Gatech-ensemble_prob.",
       "paper": {
         "role": "Co-author",
         "title": "Multi-season evaluation and analysis of categorical trend forecasts of influenza hospital admissions in the United States",
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.31.26361843v1",
-        "status": "medRxiv preprint, 2026; submitted to Nature Communications"
-      }
+        "status": "medRxiv preprint, 2026"
+      },
+      "url": "https://www.cdc.gov/flu-forecasting/data-vis/current-week.html"
     }
   ],
   "patents": [

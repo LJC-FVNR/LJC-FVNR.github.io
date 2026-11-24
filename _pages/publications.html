@@ -2,12 +2,13 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-lede: "Conference papers, newest first. Each dot marks the paper's research area."
+lede: "Main-conference papers, newest first. Each dot marks the paper's research area."
 ---
 <ul class="area-legend" aria-label="Research areas">
   {% for g in site.data.cv.publication_groups %}<li class="a{{ forloop.index }}"><a href="{{ '/' | relative_url }}#area-{{ g.id }}">{{ g.name }}</a></li>{% endfor %}
 </ul>
-{% assign pubs = site.publications | sort: 'date' | reverse %}
+<p class="page-links"><a href="#workshop-papers">Workshop papers</a> · <a href="#conference-posters">Conference posters</a> · <a href="#preprints">Preprints</a></p>
+{% assign pubs = site.publications | where: 'category', 'conferences' | sort: 'date' | reverse %}
 {% assign years = pubs | group_by_exp: 'p', "p.date | date: '%Y'" %}
 {% for year in years %}
 <section class="section year-group" aria-labelledby="y{{ year.name }}">
@@ -17,4 +18,24 @@ lede: "Conference papers, newest first. Each dot marks the paper's research area
   </ol>
 </section>
 {% endfor %}
-<p class="legend">* Corresponding author.{% if site.author.googlescholar %} The full record is on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.{% endif %}</p>
+<p class="legend">* Corresponding author.</p>
+
+{% capture my_name %}<b>{{ site.author.name }}</b>{% endcapture %}
+{% for group in site.data.additional_publications %}
+<section class="section" aria-labelledby="{{ group.id }}">
+  <div class="section-head"><h2 id="{{ group.id }}">{{ group.title }}</h2></div>
+  <ul class="list">
+    {% for paper in group.items %}
+    <li class="row">
+      <div class="what">
+        <a class="title" href="{{ paper.url }}">{{ paper.title | escape }}</a>
+        <p class="sub">{{ paper.authors | escape | replace: site.author.name, my_name }}</p>
+        <p class="detail">{{ paper.venue | escape }}{% if paper.related %} · <a href="{{ paper.related | relative_url }}">Main-conference paper</a>{% endif %}</p>
+      </div>
+      <span class="when">{{ paper.year }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% if site.author.googlescholar %}<p class="legend"><a href="{{ site.author.googlescholar }}">Google Scholar profile</a></p>{% endif %}

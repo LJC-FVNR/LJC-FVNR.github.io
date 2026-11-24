@@ -23,7 +23,7 @@
   <div class="list is-tight">
     {% for e in cv.education %}
     <div class="row">
-      <span class="what"><b>{{ e.area }}</b>, {{ e.institution }}{% if e.location %}, {{ e.location }}{% endif %}{% if e.advisor %} <span class="muted">(Advisor: {{ e.advisor }})</span>{% endif %}</span>
+      <div class="what"><b>{{ e.area }}</b>, {{ e.institution }}{% if e.location %}, {{ e.location }}{% endif %}{% if e.advisor %} <span class="muted">(Advisor: {{ e.advisor }})</span>{% endif %}{% if e.home_school %}<p class="detail">{{ e.home_school }}</p>{% endif %}</div>
       <span class="when">{{ e.startDate | replace: '. ', ' ' }}–{{ e.endDate | replace: '. ', ' ' }}</span>
     </div>
     {% endfor %}
@@ -71,7 +71,7 @@
     {% for item in cv.research_translation %}
     <div class="row">
       <div class="what">
-        <span class="title">{{ item.title }}</span>
+        {% if item.url %}<a class="title" href="{{ item.url }}">{{ item.title }}</a>{% else %}<span class="title">{{ item.title }}</span>{% endif %}
         {% if item.description %}<p class="detail">{{ item.description }}</p>{% endif %}
         {% if item.paper %}<p class="detail">{{ item.paper.role }} of <a href="{{ item.paper.url }}">{{ item.paper.title }}</a> ({{ item.paper.status }}).</p>{% endif %}
       </div>

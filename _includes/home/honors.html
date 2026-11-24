@@ -5,7 +5,7 @@
   <div class="list is-tight">
     {% for a in awards %}
     <div class="row">
-      <span class="what"><a class="title" href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.awarder %}{% unless a.title contains a.awarder %}<span class="muted">, {{ a.awarder }}</span>{% endunless %}{% endif %}</span>
+      <div class="what"><a class="title" href="{{ a.url | relative_url }}">{{ a.title }}</a>{% if a.awarder %}{% unless a.title contains a.awarder %}<span class="muted">, {{ a.awarder }}</span>{% endunless %}{% endif %}{% if a.field %}<p class="detail">Awarded in the area of {{ a.field }}</p>{% endif %}</div>
       <span class="when">{% if a.award_date %}{{ a.award_date }}{% else %}{{ a.date | date: '%Y' }}{% endif %}</span>
     </div>
     {% endfor %}

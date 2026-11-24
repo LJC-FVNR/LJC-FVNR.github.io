@@ -1,5 +1,5 @@
 {% comment %} Invited talks first, then by date; repeat deliveries of one talk share a row. {% endcomment %}
-{% assign by_date = site.talks | sort: 'date' | reverse %}
+{% assign by_date = site.talks | where_exp: 't', 't.homepage != false' | sort: 'date' | reverse %}
 {% assign invited = by_date | where_exp: 't', "t.type contains 'Invited'" %}
 {% assign others = '' | split: '' %}
 {% for t in by_date %}{% unless t.type contains 'Invited' %}{% assign others = others | push: t %}{% endunless %}{% endfor %}
