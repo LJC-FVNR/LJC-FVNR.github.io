@@ -258,7 +258,6 @@ a:hover { text-decoration-color: currentColor; }
   .ident { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px 14px; }
   .ident > div { display: contents; }
   .ident .role { grid-column: 1 / -1; margin: 0; }
-  .ident .job-market { text-wrap: balance; }
 }
 
 /* ---------- sections ---------- */

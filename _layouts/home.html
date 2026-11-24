@@ -7,8 +7,7 @@ layout: default
     <img src="{{ '/images/profile-avatar.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="60" height="60">
     <div>
       <h1 id="hero-name">{{ site.author.name }}</h1>
-      <p class="role">{{ page.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
-      {% if page.job_market %}<p class="role job-market">{{ page.job_market | escape }}</p>{% endif %}
+      <p class="role">{{ page.role | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if page.job_market %} <span class="job-market">{{ page.job_market | escape }}</span>{% endif %}</p>
     </div>
   </div>
   <div class="hero-grid">

@@ -8,7 +8,7 @@ permalink: /
 # map decodes word by word (one token per word). In the statement, "~" joins
 # words that never break apart, and "^" joins words that stay on one line on
 # wide screens, so lines break between phrases rather than inside them.
-role: "Ph.D. candidate in [Machine Learning](https://ml.gatech.edu/) at Georgia Tech’s [H. Milton Stewart School of Industrial and Systems Engineering (ISyE)](https://www.isye.gatech.edu/), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang)."
+role: "Ph.D. candidate in [Machine Learning](https://ml.gatech.edu/) at Georgia Tech’s [H. Milton Stewart School of Industrial and Systems Engineering (ISyE)](https://www.isye.gatech.edu/), advised by [Prof. Shihao Yang](https://www.isye.gatech.edu/users/shihao-yang){: .nw}."
 job_market: "I’m on the 2026–27 academic job market for a tenure-track faculty position."
 statement: "I^work^on^how^sequence~models read~context,^store~knowledge, and~rewrite^their~own~weights, toward~self-improving^LLMs, agents,^and~AGI."
 # The research section: one paragraph on the thread through the work, and for
