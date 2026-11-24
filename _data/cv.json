@@ -23,16 +23,6 @@
   "research_interests": "Parametric memory and continual learning; LLM self-improvement; agentic AI; foundation models and LLM pretraining; efficient and expressive sequence modeling; latent and in-context reasoning; time series analysis.",
   "work": [
     {
-      "company": "Georgia Institute of Technology",
-      "position": "Graduate Research and Teaching Assistant",
-      "location": "Atlanta, GA",
-      "startDate": "Aug. 2023",
-      "endDate": "Present",
-      "highlights": [
-        "Graduate Teaching Assistant in Fall 2026, following a Graduate Research Assistant appointment."
-      ]
-    },
-    {
       "company": "Tencent Medical AI Lab (JARVIS Lab)",
       "position": "Data Scientist Intern",
       "location": "Shenzhen, China",
@@ -259,7 +249,8 @@
       "title": "Robert Goodell Brown PhD Student Fellowship for Excellence in Research",
       "awarder": "Georgia Tech",
       "date": "2026",
-      "summary": "Awarded in the area of Data Science and Statistics"
+      "summary": "Awarded in the area of Data Science and Statistics",
+      "url": "/awards/2026-robert-goodell-brown-fellowship"
     },
     {
       "title": "George Fellowship",
@@ -279,7 +270,8 @@
       "title": "Margaret and Stephen Kendrick PhD Student Fellowship for Research Excellence",
       "awarder": "Georgia Tech",
       "date": "2025",
-      "summary": "Awarded in the area of Analytics and Machine Learning"
+      "summary": "Awarded in the area of Analytics and Machine Learning",
+      "url": "/awards/2025-kendrick-phd-student-fellowship"
     },
     {
       "title": "M.H. Stewart Fellowship",
