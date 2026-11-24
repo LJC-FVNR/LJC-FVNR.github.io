@@ -163,6 +163,7 @@ a:hover { text-decoration-color: currentColor; }
 .ident h1 { margin: 0; font-size: 28px; line-height: 1.15; font-weight: 600; letter-spacing: -0.025em; }
 .ident .role { margin: 4px 0 0; font-size: 15px; line-height: 1.45; color: var(--muted); }
 .ident .role a { color: var(--text); }
+.ident .job-market { color: var(--ink); font-weight: 500; }
 
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: clamp(40px, 6vw, 88px); margin-top: clamp(40px, 6vh, 64px); align-items: start; }
 .hero-text { min-width: 0; }

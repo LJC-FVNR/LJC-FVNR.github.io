@@ -134,7 +134,10 @@
   <div class="list is-tight">
     {% for award in cv.awards %}
     <div class="row">
-      <span class="what">{% if award.url %}<a class="title" href="{{ award.url | relative_url }}">{{ award.title }}</a>{% else %}<span class="title">{{ award.title }}</span>{% endif %}{% if award.awarder %}{% unless award.title contains award.awarder %}<span class="muted">, {{ award.awarder }}</span>{% endunless %}{% endif %}{% if award.summary %}<span class="muted">. {{ award.summary }}</span>{% endif %}</span>
+      <div class="what">
+        {% if award.url %}<a class="title" href="{{ award.url | relative_url }}">{{ award.title }}</a>{% else %}<span class="title">{{ award.title }}</span>{% endif %}{% if award.awarder %}{% unless award.title contains award.awarder %}<span class="muted">, {{ award.awarder }}</span>{% endunless %}{% endif %}
+        {% if award.summary %}<p class="sub">{{ award.summary }}</p>{% endif %}
+      </div>
       <span class="when">{{ award.date }}</span>
     </div>
     {% endfor %}
